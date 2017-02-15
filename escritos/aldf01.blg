@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: aldf01.aux
+The style file: apsr.bst
+Database file #1: d:/01/mydocs/magar.bib
+I was expecting a `,' or a `}'---line 349 of file d:/01/mydocs/magar.bib
+ :     Author 
+ :            = "Archivo de Diputados",
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 605 of file d:/01/mydocs/magar.bib
+ :     Title = "Dataset for the research project "
+ :                                                La din{\'a}mica del presidencialismo: un estudio comparativo de los gobiernos de Alfons{\'i}n y Menem entre 1983 y 1995" [floppy disk]",
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 796 of file d:/01/mydocs/magar.bib
+ :     
+ :     Volume = 45,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 830 of file d:/01/mydocs/magar.bib
+ : 
+ : %    Year = "n.d.",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 930 of file d:/01/mydocs/magar.bib
+ :     
+ :     Year = 1888,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 5933 of file d:/01/mydocs/magar.bib
+ :     
+ :     Volume = 5,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 6557 of file d:/01/mydocs/magar.bib
+ : 
+ : %@article{rosas.langston.2011,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 6558 of file d:/01/mydocs/magar.bib
+ : 
+ : %    Author = "Rosas, Guillermo and Langston, Joy",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 6620 of file d:/01/mydocs/magar.bib
+ :     Title = "The Partisan Impacts of Non-Partisan Redistricting: Northern Ireland, 1993--95"
+ :                                                                                             ",
+I'm skipping whatever remains of this entry
+You're missing a field name---line 6727 of file d:/01/mydocs/magar.bib
+ : 
+ : %  Pages = "xx--xx",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 6956 of file d:/01/mydocs/magar.bib
+ :     Author 
+ :            = "Servicio Electoral",
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 7304 of file d:/01/mydocs/magar.bib
+ :     
+ :     Author = "Squire, Peverill",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 7769 of file d:/01/mydocs/magar.bib
+ :     Author 
+ :            = "Venezuela",
+I'm skipping whatever remains of this entry
+Warning--empty author in rosas.langston.2011
+(There were 13 error messages)

@@ -1,0 +1,1355 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (MiKTeX 2.9) (preloaded format=pdflatex 2011.2.7)  2 MAY 2011 14:24
+entering extended mode
+**D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutlines.tex
+(D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutlines.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2010/01/28 v2.1 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count90
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\ae.sty"
+Package: ae 2001/02/12 1.3 Almost European Computer Modern
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+)
+LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aer.fd"
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+)))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ansinew.def"
+File: ansinew.def 2008/03/30 v1.1d Input encoding file
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks18
+\ex@=\dimen111
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen112
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen113
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks19
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks20
+\eqnshift@=\dimen114
+\alignsep@=\dimen115
+\tagshift@=\dimen116
+\tagwidth@=\dimen117
+\totwidth@=\dimen118
+\lineht@=\dimen119
+\@envbody=\toks21
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2009/06/22 v3.00
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/01/28 v0.05d Graphics/color for pdfTeX
+\Gread@gobject=\count103
+)))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\pifont.sty"
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\upsy.fd"
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tabulary\tabulary.sty"
+Package: tabulary 2008/12/01 v0.9 tabulary package (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen120
+\extrarowheight=\dimen121
+\NC@list=\toks23
+\extratabsurround=\skip48
+\backup@length=\skip49
+)
+\TY@count=\count104
+\TY@linewidth=\dimen122
+\tymin=\dimen123
+\tymax=\dimen124
+\TY@tablewidth=\dimen125
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen126
+\Gin@req@width=\dimen127
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\frontendlayer\tikz.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgf.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgfrcs.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-common.te
+x"
+\pgfutil@everybye=\toks24
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfutil-latex.def
+"
+\pgfutil@abb=\box28
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfrcs.code.tex"
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+))
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\basiclayer\pgfcore.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\systemlayer\pgfsys.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys.code.tex
+"
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex
+"
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeysfiltered.c
+ode.tex"
+\pgfkeys@tmptoks=\toks27
+))
+\pgf@x=\dimen128
+\pgf@y=\dimen129
+\pgf@xa=\dimen130
+\pgf@ya=\dimen131
+\pgf@xb=\dimen132
+\pgf@yb=\dimen133
+\pgf@xc=\dimen134
+\pgf@yc=\dimen135
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count105
+\c@pgf@countb=\count106
+\c@pgf@countc=\count107
+\c@pgf@countd=\count108
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-pdftex.d
+ef"
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsys-common-p
+df.def"
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+)))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsyssoftpath.
+code.tex"
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count109
+\pgfsyssoftpath@bigbuffer@items=\count110
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\systemlayer\pgfsysprotocol.
+code.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcore.code.tex
+"
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmath.code.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathcalc.code.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathutil.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathparser.code.tex
+"
+\pgfmath@dimen=\dimen136
+\pgfmath@count=\count111
+\pgfmath@box=\box29
+\pgfmath@toks=\toks28
+\pgfmath@stack@operand=\toks29
+\pgfmath@stack@operation=\toks30
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.code.
+tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.basic
+.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.trigo
+nometric.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.rando
+m.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.compa
+rison.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.base.
+code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.round
+.code.tex")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfunctions.misc.
+code.tex")))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\math\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count112
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepoints.co
+de.tex"
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen137
+\pgf@picmaxx=\dimen138
+\pgf@picminy=\dimen139
+\pgf@picmaxy=\dimen140
+\pgf@pathminx=\dimen141
+\pgf@pathmaxx=\dimen142
+\pgf@pathminy=\dimen143
+\pgf@pathmaxy=\dimen144
+\pgf@xx=\dimen145
+\pgf@xy=\dimen146
+\pgf@yx=\dimen147
+\pgf@yy=\dimen148
+\pgf@zx=\dimen149
+\pgf@zy=\dimen150
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathconst
+ruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen151
+\pgf@path@lasty=\dimen152
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathusage
+.code.tex"
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen153
+\pgf@shorten@start@additional=\dimen154
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorescopes.co
+de.tex"
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+\pgfpic=\box30
+\pgf@hbox=\box31
+\pgf@layerbox@main=\box32
+\pgf@picture@serial@count=\count113
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoregraphicst
+ate.code.tex"
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen155
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretransform
+ations.code.tex"
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen156
+\pgf@pt@y=\dimen157
+\pgf@pt@temp=\dimen158
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorequick.cod
+e.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreobjects.c
+ode.tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepathproce
+ssing.code.tex"
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorearrows.co
+de.tex"
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreshade.cod
+e.tex"
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen159
+\pgf@sys@shading@range@num=\count114
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreimage.cod
+e.tex"
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoreexternal.
+code.tex"
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+\pgfexternal@startupbox=\box33
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorelayers.co
+de.tex"
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcoretranspare
+ncy.code.tex"
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\basiclayer\pgfcorepatterns.
+code.tex"
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+)))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleshapes.cod
+e.tex"
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+\pgfnodeparttextbox=\box34
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmoduleplot.code.
+tex"
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version
+-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen160
+\pgf@nodesepend=\dimen161
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\compatibility\pgfcomp-version
+-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgffor.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgf\utilities\pgfkeys.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgfkeys.code.tex"
+)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\utilities\pgffor.code.te
+x"
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen162
+\pgffor@skip=\dimen163
+\pgffor@stack=\toks31
+\pgffor@toks=\toks32
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\tikz.cod
+e.tex"
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryplothan
+dlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count115
+\pgfplotmarksize=\dimen164
+)
+\tikz@lastx=\dimen165
+\tikz@lasty=\dimen166
+\tikz@lastxsaved=\dimen167
+\tikz@lastysaved=\dimen168
+\tikzleveldistance=\dimen169
+\tikzsiblingdistance=\dimen170
+\tikz@figbox=\box35
+\tikz@tempbox=\box36
+\tikztreelevel=\count116
+\tikznumberofchildren=\count117
+\tikznumberofcurrentchild=\count118
+\tikz@fig@count=\count119
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\modules\pgfmodulematrix.cod
+e.tex"
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count120
+\pgfmatrixcurrentcolumn=\count121
+\pgf@matrix@numberofcolumns=\count122
+)
+\tikz@expandcount=\count123
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
+s\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
+)))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
+s\tikzlibraryarrows.code.tex"
+File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.
+code.tex"
+File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
+\arrowsize=\dimen171
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\librarie
+s\tikzlibraryshapes.geometric.code.tex"
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibrary
+shapes.geometric.code.tex"
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v2.10 (rcs-revision 1.1)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count124
+\rotFPtop=\skip50
+\rotFPbot=\skip51
+\rot@float@box=\box37
+\rot@mess@toks=\toks33
+)
+
+LaTeX Warning: Unused global option(s):
+    [letter].
+
+(D:\01\data\rollcall\aldf\graphs\cutlinesOnebyOne\cutlines.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count125
+\scratchdimen=\dimen172
+\scratchbox=\box38
+\nofMPsegments=\count126
+\nofMParguments=\count127
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen173
+\MPnumerator=\count129
+\everyMPtoPDFconversion=\toks35
+) ABD: EveryShipout initializing macros
+LaTeX Font Info:    Try loading font information for U+msa on input line 52.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 52.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+<cutline1.pdf, id=4, 415.5525pt x 415.5525pt>
+File: cutline1.pdf Graphic file (type pdf)
+ <use cutline1.pdf>
+<cutline2.pdf, id=5, 415.5525pt x 415.5525pt>
+File: cutline2.pdf Graphic file (type pdf)
+ <use cutline2.pdf>
+<cutline3.pdf, id=6, 415.5525pt x 415.5525pt>
+File: cutline3.pdf Graphic file (type pdf)
+ <use cutline3.pdf>
+<cutline4.pdf, id=7, 415.5525pt x 415.5525pt>
+File: cutline4.pdf Graphic file (type pdf)
+ <use cutline4.pdf>
+<cutline5.pdf, id=8, 415.5525pt x 415.5525pt>
+File: cutline5.pdf Graphic file (type pdf)
+ <use cutline5.pdf>
+<cutline6.pdf, id=9, 415.5525pt x 415.5525pt>
+File: cutline6.pdf Graphic file (type pdf)
+ <use cutline6.pdf>
+<cutline7.pdf, id=10, 415.5525pt x 415.5525pt>
+File: cutline7.pdf Graphic file (type pdf)
+ <use cutline7.pdf>
+<cutline8.pdf, id=11, 415.5525pt x 415.5525pt>
+File: cutline8.pdf Graphic file (type pdf)
+ <use cutline8.pdf>
+<cutline9.pdf, id=12, 415.5525pt x 415.5525pt>
+File: cutline9.pdf Graphic file (type pdf)
+ <use cutline9.pdf>
+<cutline10.pdf, id=13, 415.5525pt x 415.5525pt>
+File: cutline10.pdf Graphic file (type pdf)
+ <use cutline10.pdf>
+<cutline11.pdf, id=14, 415.5525pt x 415.5525pt>
+File: cutline11.pdf Graphic file (type pdf)
+ <use cutline11.pdf>
+<cutline12.pdf, id=15, 415.5525pt x 415.5525pt>
+File: cutline12.pdf Graphic file (type pdf)
+ <use cutline12.pdf>
+<cutline13.pdf, id=16, 415.5525pt x 415.5525pt>
+File: cutline13.pdf Graphic file (type pdf)
+ <use cutline13.pdf>
+<cutline14.pdf, id=17, 415.5525pt x 415.5525pt>
+File: cutline14.pdf Graphic file (type pdf)
+ <use cutline14.pdf>
+<cutline15.pdf, id=18, 415.5525pt x 415.5525pt>
+File: cutline15.pdf Graphic file (type pdf)
+ <use cutline15.pdf>
+<cutline16.pdf, id=19, 415.5525pt x 415.5525pt>
+File: cutline16.pdf Graphic file (type pdf)
+ <use cutline16.pdf>
+<cutline17.pdf, id=20, 415.5525pt x 415.5525pt>
+File: cutline17.pdf Graphic file (type pdf)
+ <use cutline17.pdf>
+<cutline18.pdf, id=21, 415.5525pt x 415.5525pt>
+File: cutline18.pdf Graphic file (type pdf)
+ <use cutline18.pdf>
+<cutline19.pdf, id=22, 415.5525pt x 415.5525pt>
+File: cutline19.pdf Graphic file (type pdf)
+ <use cutline19.pdf>
+<cutline20.pdf, id=23, 415.5525pt x 415.5525pt>
+File: cutline20.pdf Graphic file (type pdf)
+ <use cutline20.pdf>
+Overfull \hbox (33.48906pt too wide) in paragraph at lines 52--74
+ [] 
+ []
+
+[1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <D:/01/data/rollcall/a
+ldf/graphs/cutlinesOnebyOne/cutline1.pdf> <D:/01/data/rollcall/aldf/graphs/cutl
+inesOnebyOne/cutline2.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cu
+tline3.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline4.pdf> <D:
+/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline5.pdf> <D:/01/data/rollca
+ll/aldf/graphs/cutlinesOnebyOne/cutline6.pdf> <D:/01/data/rollcall/aldf/graphs/
+cutlinesOnebyOne/cutline7.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOn
+e/cutline8.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline9.pdf>
+ <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline10.pdf> <D:/01/data/r
+ollcall/aldf/graphs/cutlinesOnebyOne/cutline11.pdf> <D:/01/data/rollcall/aldf/g
+raphs/cutlinesOnebyOne/cutline12.pdf> <D:/01/data/rollcall/aldf/graphs/cutlines
+OnebyOne/cutline13.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutli
+ne14.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline15.pdf> <D:/
+01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline16.pdf> <D:/01/data/rollca
+ll/aldf/graphs/cutlinesOnebyOne/cutline17.pdf> <D:/01/data/rollcall/aldf/graphs
+/cutlinesOnebyOne/cutline18.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOneby
+One/cutline19.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline20.
+pdf>] <cutline21.pdf, id=174, 415.5525pt x 415.5525pt>
+File: cutline21.pdf Graphic file (type pdf)
+ <use cutline21.pdf>
+<cutline22.pdf, id=175, 415.5525pt x 415.5525pt>
+File: cutline22.pdf Graphic file (type pdf)
+ <use cutline22.pdf>
+<cutline23.pdf, id=176, 415.5525pt x 415.5525pt>
+File: cutline23.pdf Graphic file (type pdf)
+ <use cutline23.pdf>
+<cutline24.pdf, id=177, 415.5525pt x 415.5525pt>
+File: cutline24.pdf Graphic file (type pdf)
+ <use cutline24.pdf>
+<cutline25.pdf, id=178, 415.5525pt x 415.5525pt>
+File: cutline25.pdf Graphic file (type pdf)
+ <use cutline25.pdf>
+<cutline26.pdf, id=179, 415.5525pt x 415.5525pt>
+File: cutline26.pdf Graphic file (type pdf)
+ <use cutline26.pdf>
+<cutline27.pdf, id=180, 415.5525pt x 415.5525pt>
+File: cutline27.pdf Graphic file (type pdf)
+ <use cutline27.pdf>
+<cutline28.pdf, id=181, 415.5525pt x 415.5525pt>
+File: cutline28.pdf Graphic file (type pdf)
+ <use cutline28.pdf>
+<cutline29.pdf, id=182, 415.5525pt x 415.5525pt>
+File: cutline29.pdf Graphic file (type pdf)
+ <use cutline29.pdf>
+<cutline30.pdf, id=183, 415.5525pt x 415.5525pt>
+File: cutline30.pdf Graphic file (type pdf)
+ <use cutline30.pdf>
+<cutline31.pdf, id=184, 415.5525pt x 415.5525pt>
+File: cutline31.pdf Graphic file (type pdf)
+ <use cutline31.pdf>
+<cutline32.pdf, id=185, 415.5525pt x 415.5525pt>
+File: cutline32.pdf Graphic file (type pdf)
+ <use cutline32.pdf>
+<cutline33.pdf, id=186, 415.5525pt x 415.5525pt>
+File: cutline33.pdf Graphic file (type pdf)
+ <use cutline33.pdf>
+<cutline34.pdf, id=187, 415.5525pt x 415.5525pt>
+File: cutline34.pdf Graphic file (type pdf)
+ <use cutline34.pdf>
+<cutline35.pdf, id=188, 415.5525pt x 415.5525pt>
+File: cutline35.pdf Graphic file (type pdf)
+ <use cutline35.pdf>
+<cutline36.pdf, id=189, 415.5525pt x 415.5525pt>
+File: cutline36.pdf Graphic file (type pdf)
+ <use cutline36.pdf>
+<cutline37.pdf, id=190, 415.5525pt x 415.5525pt>
+File: cutline37.pdf Graphic file (type pdf)
+ <use cutline37.pdf>
+<cutline38.pdf, id=191, 415.5525pt x 415.5525pt>
+File: cutline38.pdf Graphic file (type pdf)
+ <use cutline38.pdf>
+<cutline39.pdf, id=192, 415.5525pt x 415.5525pt>
+File: cutline39.pdf Graphic file (type pdf)
+ <use cutline39.pdf>
+<cutline40.pdf, id=193, 415.5525pt x 415.5525pt>
+File: cutline40.pdf Graphic file (type pdf)
+ <use cutline40.pdf>
+Overfull \hbox (33.48906pt too wide) in paragraph at lines 79--101
+ [] 
+ []
+
+[3 <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline21.pdf> <D:/01/data
+/rollcall/aldf/graphs/cutlinesOnebyOne/cutline22.pdf> <D:/01/data/rollcall/aldf
+/graphs/cutlinesOnebyOne/cutline23.pdf> <D:/01/data/rollcall/aldf/graphs/cutlin
+esOnebyOne/cutline24.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cut
+line25.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline26.pdf> <D
+:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline27.pdf> <D:/01/data/roll
+call/aldf/graphs/cutlinesOnebyOne/cutline28.pdf> <D:/01/data/rollcall/aldf/grap
+hs/cutlinesOnebyOne/cutline29.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOne
+byOne/cutline30.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline3
+1.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline32.pdf> <D:/01/
+data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline33.pdf> <D:/01/data/rollcall/
+aldf/graphs/cutlinesOnebyOne/cutline34.pdf> <D:/01/data/rollcall/aldf/graphs/cu
+tlinesOnebyOne/cutline35.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne
+/cutline36.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline37.pdf
+> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline38.pdf> <D:/01/data/
+rollcall/aldf/graphs/cutlinesOnebyOne/cutline39.pdf> <D:/01/data/rollcall/aldf/
+graphs/cutlinesOnebyOne/cutline40.pdf>]
+<cutline41.pdf, id=337, 415.5525pt x 415.5525pt>
+File: cutline41.pdf Graphic file (type pdf)
+ <use cutline41.pdf>
+<cutline42.pdf, id=338, 415.5525pt x 415.5525pt>
+File: cutline42.pdf Graphic file (type pdf)
+ <use cutline42.pdf>
+<cutline43.pdf, id=339, 415.5525pt x 415.5525pt>
+File: cutline43.pdf Graphic file (type pdf)
+ <use cutline43.pdf>
+<cutline44.pdf, id=340, 415.5525pt x 415.5525pt>
+File: cutline44.pdf Graphic file (type pdf)
+ <use cutline44.pdf>
+<cutline45.pdf, id=341, 415.5525pt x 415.5525pt>
+File: cutline45.pdf Graphic file (type pdf)
+ <use cutline45.pdf>
+<cutline46.pdf, id=342, 415.5525pt x 415.5525pt>
+File: cutline46.pdf Graphic file (type pdf)
+ <use cutline46.pdf>
+<cutline47.pdf, id=343, 415.5525pt x 415.5525pt>
+File: cutline47.pdf Graphic file (type pdf)
+ <use cutline47.pdf>
+<cutline48.pdf, id=344, 415.5525pt x 415.5525pt>
+File: cutline48.pdf Graphic file (type pdf)
+ <use cutline48.pdf>
+<cutline49.pdf, id=345, 415.5525pt x 415.5525pt>
+File: cutline49.pdf Graphic file (type pdf)
+ <use cutline49.pdf>
+<cutline50.pdf, id=346, 415.5525pt x 415.5525pt>
+File: cutline50.pdf Graphic file (type pdf)
+ <use cutline50.pdf>
+<cutline51.pdf, id=347, 415.5525pt x 415.5525pt>
+File: cutline51.pdf Graphic file (type pdf)
+ <use cutline51.pdf>
+<cutline52.pdf, id=348, 415.5525pt x 415.5525pt>
+File: cutline52.pdf Graphic file (type pdf)
+ <use cutline52.pdf>
+<cutline53.pdf, id=349, 415.5525pt x 415.5525pt>
+File: cutline53.pdf Graphic file (type pdf)
+ <use cutline53.pdf>
+<cutline54.pdf, id=350, 415.5525pt x 415.5525pt>
+File: cutline54.pdf Graphic file (type pdf)
+ <use cutline54.pdf>
+<cutline55.pdf, id=351, 415.5525pt x 415.5525pt>
+File: cutline55.pdf Graphic file (type pdf)
+ <use cutline55.pdf>
+<cutline56.pdf, id=352, 415.5525pt x 415.5525pt>
+File: cutline56.pdf Graphic file (type pdf)
+ <use cutline56.pdf>
+<cutline57.pdf, id=353, 415.5525pt x 415.5525pt>
+File: cutline57.pdf Graphic file (type pdf)
+ <use cutline57.pdf>
+<cutline58.pdf, id=354, 415.5525pt x 415.5525pt>
+File: cutline58.pdf Graphic file (type pdf)
+ <use cutline58.pdf>
+<cutline59.pdf, id=355, 415.5525pt x 415.5525pt>
+File: cutline59.pdf Graphic file (type pdf)
+ <use cutline59.pdf>
+<cutline60.pdf, id=356, 415.5525pt x 415.5525pt>
+File: cutline60.pdf Graphic file (type pdf)
+ <use cutline60.pdf>
+Overfull \hbox (33.48906pt too wide) in paragraph at lines 106--128
+ [] 
+ []
+
+[4 <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline41.pdf> <D:/01/data
+/rollcall/aldf/graphs/cutlinesOnebyOne/cutline42.pdf> <D:/01/data/rollcall/aldf
+/graphs/cutlinesOnebyOne/cutline43.pdf> <D:/01/data/rollcall/aldf/graphs/cutlin
+esOnebyOne/cutline44.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cut
+line45.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline46.pdf> <D
+:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline47.pdf> <D:/01/data/roll
+call/aldf/graphs/cutlinesOnebyOne/cutline48.pdf> <D:/01/data/rollcall/aldf/grap
+hs/cutlinesOnebyOne/cutline49.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOne
+byOne/cutline50.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline5
+1.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline52.pdf> <D:/01/
+data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline53.pdf> <D:/01/data/rollcall/
+aldf/graphs/cutlinesOnebyOne/cutline54.pdf> <D:/01/data/rollcall/aldf/graphs/cu
+tlinesOnebyOne/cutline55.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne
+/cutline56.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline57.pdf
+> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline58.pdf> <D:/01/data/
+rollcall/aldf/graphs/cutlinesOnebyOne/cutline59.pdf> <D:/01/data/rollcall/aldf/
+graphs/cutlinesOnebyOne/cutline60.pdf>]
+<cutline61.pdf, id=500, 415.5525pt x 415.5525pt>
+File: cutline61.pdf Graphic file (type pdf)
+ <use cutline61.pdf>
+<cutline62.pdf, id=501, 415.5525pt x 415.5525pt>
+File: cutline62.pdf Graphic file (type pdf)
+ <use cutline62.pdf>
+<cutline63.pdf, id=502, 415.5525pt x 415.5525pt>
+File: cutline63.pdf Graphic file (type pdf)
+ <use cutline63.pdf>
+<cutline64.pdf, id=503, 415.5525pt x 415.5525pt>
+File: cutline64.pdf Graphic file (type pdf)
+ <use cutline64.pdf>
+<cutline65.pdf, id=504, 415.5525pt x 415.5525pt>
+File: cutline65.pdf Graphic file (type pdf)
+ <use cutline65.pdf>
+<cutline66.pdf, id=505, 415.5525pt x 415.5525pt>
+File: cutline66.pdf Graphic file (type pdf)
+ <use cutline66.pdf>
+<cutline67.pdf, id=506, 415.5525pt x 415.5525pt>
+File: cutline67.pdf Graphic file (type pdf)
+ <use cutline67.pdf>
+<cutline68.pdf, id=507, 415.5525pt x 415.5525pt>
+File: cutline68.pdf Graphic file (type pdf)
+ <use cutline68.pdf>
+<cutline69.pdf, id=508, 415.5525pt x 415.5525pt>
+File: cutline69.pdf Graphic file (type pdf)
+ <use cutline69.pdf>
+<cutline70.pdf, id=509, 415.5525pt x 415.5525pt>
+File: cutline70.pdf Graphic file (type pdf)
+ <use cutline70.pdf>
+<cutline71.pdf, id=510, 415.5525pt x 415.5525pt>
+File: cutline71.pdf Graphic file (type pdf)
+ <use cutline71.pdf>
+<cutline72.pdf, id=511, 415.5525pt x 415.5525pt>
+File: cutline72.pdf Graphic file (type pdf)
+ <use cutline72.pdf>
+<cutline73.pdf, id=512, 415.5525pt x 415.5525pt>
+File: cutline73.pdf Graphic file (type pdf)
+ <use cutline73.pdf>
+<cutline74.pdf, id=513, 415.5525pt x 415.5525pt>
+File: cutline74.pdf Graphic file (type pdf)
+ <use cutline74.pdf>
+<cutline75.pdf, id=514, 415.5525pt x 415.5525pt>
+File: cutline75.pdf Graphic file (type pdf)
+ <use cutline75.pdf>
+<cutline76.pdf, id=515, 415.5525pt x 415.5525pt>
+File: cutline76.pdf Graphic file (type pdf)
+ <use cutline76.pdf>
+<cutline77.pdf, id=516, 415.5525pt x 415.5525pt>
+File: cutline77.pdf Graphic file (type pdf)
+ <use cutline77.pdf>
+<cutline78.pdf, id=517, 415.5525pt x 415.5525pt>
+File: cutline78.pdf Graphic file (type pdf)
+ <use cutline78.pdf>
+<cutline79.pdf, id=518, 415.5525pt x 415.5525pt>
+File: cutline79.pdf Graphic file (type pdf)
+ <use cutline79.pdf>
+<cutline80.pdf, id=519, 415.5525pt x 415.5525pt>
+File: cutline80.pdf Graphic file (type pdf)
+ <use cutline80.pdf>
+Overfull \hbox (33.48906pt too wide) in paragraph at lines 133--155
+ [] 
+ []
+
+[5 <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline61.pdf> <D:/01/data
+/rollcall/aldf/graphs/cutlinesOnebyOne/cutline62.pdf> <D:/01/data/rollcall/aldf
+/graphs/cutlinesOnebyOne/cutline63.pdf> <D:/01/data/rollcall/aldf/graphs/cutlin
+esOnebyOne/cutline64.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cut
+line65.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline66.pdf> <D
+:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline67.pdf> <D:/01/data/roll
+call/aldf/graphs/cutlinesOnebyOne/cutline68.pdf> <D:/01/data/rollcall/aldf/grap
+hs/cutlinesOnebyOne/cutline69.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOne
+byOne/cutline70.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline7
+1.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline72.pdf> <D:/01/
+data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline73.pdf> <D:/01/data/rollcall/
+aldf/graphs/cutlinesOnebyOne/cutline74.pdf> <D:/01/data/rollcall/aldf/graphs/cu
+tlinesOnebyOne/cutline75.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne
+/cutline76.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline77.pdf
+> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline78.pdf> <D:/01/data/
+rollcall/aldf/graphs/cutlinesOnebyOne/cutline79.pdf> <D:/01/data/rollcall/aldf/
+graphs/cutlinesOnebyOne/cutline80.pdf>]
+<cutline81.pdf, id=663, 415.5525pt x 415.5525pt>
+File: cutline81.pdf Graphic file (type pdf)
+ <use cutline81.pdf>
+<cutline82.pdf, id=664, 415.5525pt x 415.5525pt>
+File: cutline82.pdf Graphic file (type pdf)
+ <use cutline82.pdf>
+<cutline83.pdf, id=665, 415.5525pt x 415.5525pt>
+File: cutline83.pdf Graphic file (type pdf)
+ <use cutline83.pdf>
+<cutline84.pdf, id=666, 415.5525pt x 415.5525pt>
+File: cutline84.pdf Graphic file (type pdf)
+ <use cutline84.pdf>
+<cutline85.pdf, id=667, 415.5525pt x 415.5525pt>
+File: cutline85.pdf Graphic file (type pdf)
+ <use cutline85.pdf>
+<cutline86.pdf, id=668, 415.5525pt x 415.5525pt>
+File: cutline86.pdf Graphic file (type pdf)
+ <use cutline86.pdf>
+<cutline87.pdf, id=669, 415.5525pt x 415.5525pt>
+File: cutline87.pdf Graphic file (type pdf)
+ <use cutline87.pdf>
+<cutline88.pdf, id=670, 415.5525pt x 415.5525pt>
+File: cutline88.pdf Graphic file (type pdf)
+ <use cutline88.pdf>
+<cutline89.pdf, id=671, 415.5525pt x 415.5525pt>
+File: cutline89.pdf Graphic file (type pdf)
+ <use cutline89.pdf>
+<cutline90.pdf, id=672, 415.5525pt x 415.5525pt>
+File: cutline90.pdf Graphic file (type pdf)
+ <use cutline90.pdf>
+<cutline91.pdf, id=673, 415.5525pt x 415.5525pt>
+File: cutline91.pdf Graphic file (type pdf)
+ <use cutline91.pdf>
+<cutline92.pdf, id=674, 415.5525pt x 415.5525pt>
+File: cutline92.pdf Graphic file (type pdf)
+ <use cutline92.pdf>
+<cutline93.pdf, id=675, 415.5525pt x 415.5525pt>
+File: cutline93.pdf Graphic file (type pdf)
+ <use cutline93.pdf>
+<cutline94.pdf, id=676, 415.5525pt x 415.5525pt>
+File: cutline94.pdf Graphic file (type pdf)
+ <use cutline94.pdf>
+<cutline95.pdf, id=677, 415.5525pt x 415.5525pt>
+File: cutline95.pdf Graphic file (type pdf)
+ <use cutline95.pdf>
+<cutline96.pdf, id=678, 415.5525pt x 415.5525pt>
+File: cutline96.pdf Graphic file (type pdf)
+ <use cutline96.pdf>
+<cutline97.pdf, id=679, 415.5525pt x 415.5525pt>
+File: cutline97.pdf Graphic file (type pdf)
+ <use cutline97.pdf>
+<cutline98.pdf, id=680, 415.5525pt x 415.5525pt>
+File: cutline98.pdf Graphic file (type pdf)
+ <use cutline98.pdf>
+<cutline99.pdf, id=681, 415.5525pt x 415.5525pt>
+File: cutline99.pdf Graphic file (type pdf)
+ <use cutline99.pdf>
+<cutline100.pdf, id=682, 415.5525pt x 415.5525pt>
+File: cutline100.pdf Graphic file (type pdf)
+ <use cutline100.pdf>
+Overfull \hbox (33.48906pt too wide) in paragraph at lines 160--182
+ [] 
+ []
+
+[6 <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline81.pdf> <D:/01/data
+/rollcall/aldf/graphs/cutlinesOnebyOne/cutline82.pdf> <D:/01/data/rollcall/aldf
+/graphs/cutlinesOnebyOne/cutline83.pdf> <D:/01/data/rollcall/aldf/graphs/cutlin
+esOnebyOne/cutline84.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cut
+line85.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline86.pdf> <D
+:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline87.pdf> <D:/01/data/roll
+call/aldf/graphs/cutlinesOnebyOne/cutline88.pdf> <D:/01/data/rollcall/aldf/grap
+hs/cutlinesOnebyOne/cutline89.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOne
+byOne/cutline90.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline9
+1.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline92.pdf> <D:/01/
+data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline93.pdf> <D:/01/data/rollcall/
+aldf/graphs/cutlinesOnebyOne/cutline94.pdf> <D:/01/data/rollcall/aldf/graphs/cu
+tlinesOnebyOne/cutline95.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne
+/cutline96.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline97.pdf
+> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline98.pdf> <D:/01/data/
+rollcall/aldf/graphs/cutlinesOnebyOne/cutline99.pdf> <D:/01/data/rollcall/aldf/
+graphs/cutlinesOnebyOne/cutline100.pdf>]
+<cutline101.pdf, id=826, 415.5525pt x 415.5525pt>
+File: cutline101.pdf Graphic file (type pdf)
+ <use cutline101.pdf>
+<cutline102.pdf, id=827, 415.5525pt x 415.5525pt>
+File: cutline102.pdf Graphic file (type pdf)
+ <use cutline102.pdf>
+<cutline103.pdf, id=828, 415.5525pt x 415.5525pt>
+File: cutline103.pdf Graphic file (type pdf)
+ <use cutline103.pdf>
+<cutline104.pdf, id=829, 415.5525pt x 415.5525pt>
+File: cutline104.pdf Graphic file (type pdf)
+ <use cutline104.pdf>
+<cutline105.pdf, id=830, 415.5525pt x 415.5525pt>
+File: cutline105.pdf Graphic file (type pdf)
+ <use cutline105.pdf>
+<cutline106.pdf, id=831, 415.5525pt x 415.5525pt>
+File: cutline106.pdf Graphic file (type pdf)
+ <use cutline106.pdf>
+<cutline107.pdf, id=832, 415.5525pt x 415.5525pt>
+File: cutline107.pdf Graphic file (type pdf)
+ <use cutline107.pdf>
+<cutline108.pdf, id=833, 415.5525pt x 415.5525pt>
+File: cutline108.pdf Graphic file (type pdf)
+ <use cutline108.pdf>
+<cutline109.pdf, id=834, 415.5525pt x 415.5525pt>
+File: cutline109.pdf Graphic file (type pdf)
+ <use cutline109.pdf>
+<cutline110.pdf, id=835, 415.5525pt x 415.5525pt>
+File: cutline110.pdf Graphic file (type pdf)
+ <use cutline110.pdf>
+<cutline111.pdf, id=836, 415.5525pt x 415.5525pt>
+File: cutline111.pdf Graphic file (type pdf)
+ <use cutline111.pdf>
+<cutline112.pdf, id=837, 415.5525pt x 415.5525pt>
+File: cutline112.pdf Graphic file (type pdf)
+ <use cutline112.pdf>
+<cutline113.pdf, id=838, 415.5525pt x 415.5525pt>
+File: cutline113.pdf Graphic file (type pdf)
+ <use cutline113.pdf>
+<cutline114.pdf, id=839, 415.5525pt x 415.5525pt>
+File: cutline114.pdf Graphic file (type pdf)
+ <use cutline114.pdf>
+<cutline115.pdf, id=840, 415.5525pt x 415.5525pt>
+File: cutline115.pdf Graphic file (type pdf)
+ <use cutline115.pdf>
+<cutline116.pdf, id=841, 415.5525pt x 415.5525pt>
+File: cutline116.pdf Graphic file (type pdf)
+ <use cutline116.pdf>
+<cutline117.pdf, id=842, 415.5525pt x 415.5525pt>
+File: cutline117.pdf Graphic file (type pdf)
+ <use cutline117.pdf>
+<cutline118.pdf, id=843, 415.5525pt x 415.5525pt>
+File: cutline118.pdf Graphic file (type pdf)
+ <use cutline118.pdf>
+<cutline119.pdf, id=844, 415.5525pt x 415.5525pt>
+File: cutline119.pdf Graphic file (type pdf)
+ <use cutline119.pdf>
+<cutline120.pdf, id=845, 415.5525pt x 415.5525pt>
+File: cutline120.pdf Graphic file (type pdf)
+ <use cutline120.pdf>
+Overfull \hbox (33.48906pt too wide) in paragraph at lines 187--209
+ [] 
+ []
+
+[7 <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline101.pdf> <D:/01/dat
+a/rollcall/aldf/graphs/cutlinesOnebyOne/cutline102.pdf> <D:/01/data/rollcall/al
+df/graphs/cutlinesOnebyOne/cutline103.pdf> <D:/01/data/rollcall/aldf/graphs/cut
+linesOnebyOne/cutline104.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne
+/cutline105.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline106.p
+df> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline107.pdf> <D:/01/da
+ta/rollcall/aldf/graphs/cutlinesOnebyOne/cutline108.pdf> <D:/01/data/rollcall/a
+ldf/graphs/cutlinesOnebyOne/cutline109.pdf> <D:/01/data/rollcall/aldf/graphs/cu
+tlinesOnebyOne/cutline110.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOn
+e/cutline111.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline112.
+pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline113.pdf> <D:/01/d
+ata/rollcall/aldf/graphs/cutlinesOnebyOne/cutline114.pdf> <D:/01/data/rollcall/
+aldf/graphs/cutlinesOnebyOne/cutline115.pdf> <D:/01/data/rollcall/aldf/graphs/c
+utlinesOnebyOne/cutline116.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyO
+ne/cutline117.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline118
+.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline119.pdf> <D:/01/
+data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline120.pdf>]
+<cutline121.pdf, id=990, 415.5525pt x 415.5525pt>
+File: cutline121.pdf Graphic file (type pdf)
+ <use cutline121.pdf>
+<cutline122.pdf, id=991, 415.5525pt x 415.5525pt>
+File: cutline122.pdf Graphic file (type pdf)
+ <use cutline122.pdf>
+<cutline123.pdf, id=992, 415.5525pt x 415.5525pt>
+File: cutline123.pdf Graphic file (type pdf)
+ <use cutline123.pdf>
+<cutline124.pdf, id=993, 415.5525pt x 415.5525pt>
+File: cutline124.pdf Graphic file (type pdf)
+ <use cutline124.pdf>
+<cutline125.pdf, id=994, 415.5525pt x 415.5525pt>
+File: cutline125.pdf Graphic file (type pdf)
+ <use cutline125.pdf>
+<cutline126.pdf, id=995, 415.5525pt x 415.5525pt>
+File: cutline126.pdf Graphic file (type pdf)
+ <use cutline126.pdf>
+<cutline127.pdf, id=996, 415.5525pt x 415.5525pt>
+File: cutline127.pdf Graphic file (type pdf)
+ <use cutline127.pdf>
+<cutline128.pdf, id=997, 415.5525pt x 415.5525pt>
+File: cutline128.pdf Graphic file (type pdf)
+ <use cutline128.pdf>
+<cutline129.pdf, id=998, 415.5525pt x 415.5525pt>
+File: cutline129.pdf Graphic file (type pdf)
+ <use cutline129.pdf>
+<cutline130.pdf, id=999, 415.5525pt x 415.5525pt>
+File: cutline130.pdf Graphic file (type pdf)
+ <use cutline130.pdf>
+<cutline131.pdf, id=1000, 415.5525pt x 415.5525pt>
+File: cutline131.pdf Graphic file (type pdf)
+ <use cutline131.pdf>
+<cutline132.pdf, id=1001, 415.5525pt x 415.5525pt>
+File: cutline132.pdf Graphic file (type pdf)
+ <use cutline132.pdf>
+<cutline133.pdf, id=1002, 415.5525pt x 415.5525pt>
+File: cutline133.pdf Graphic file (type pdf)
+ <use cutline133.pdf>
+<cutline134.pdf, id=1003, 415.5525pt x 415.5525pt>
+File: cutline134.pdf Graphic file (type pdf)
+ <use cutline134.pdf>
+<cutline135.pdf, id=1004, 415.5525pt x 415.5525pt>
+File: cutline135.pdf Graphic file (type pdf)
+ <use cutline135.pdf>
+<cutline136.pdf, id=1005, 415.5525pt x 415.5525pt>
+File: cutline136.pdf Graphic file (type pdf)
+ <use cutline136.pdf>
+<cutline137.pdf, id=1006, 415.5525pt x 415.5525pt>
+File: cutline137.pdf Graphic file (type pdf)
+ <use cutline137.pdf>
+<cutline138.pdf, id=1007, 415.5525pt x 415.5525pt>
+File: cutline138.pdf Graphic file (type pdf)
+ <use cutline138.pdf>
+<cutline139.pdf, id=1008, 415.5525pt x 415.5525pt>
+File: cutline139.pdf Graphic file (type pdf)
+ <use cutline139.pdf>
+<cutline140.pdf, id=1009, 415.5525pt x 415.5525pt>
+File: cutline140.pdf Graphic file (type pdf)
+ <use cutline140.pdf>
+Overfull \hbox (33.48906pt too wide) in paragraph at lines 214--236
+ [] 
+ []
+
+[8 <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline121.pdf> <D:/01/dat
+a/rollcall/aldf/graphs/cutlinesOnebyOne/cutline122.pdf> <D:/01/data/rollcall/al
+df/graphs/cutlinesOnebyOne/cutline123.pdf> <D:/01/data/rollcall/aldf/graphs/cut
+linesOnebyOne/cutline124.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne
+/cutline125.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline126.p
+df> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline127.pdf> <D:/01/da
+ta/rollcall/aldf/graphs/cutlinesOnebyOne/cutline128.pdf> <D:/01/data/rollcall/a
+ldf/graphs/cutlinesOnebyOne/cutline129.pdf> <D:/01/data/rollcall/aldf/graphs/cu
+tlinesOnebyOne/cutline130.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOn
+e/cutline131.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline132.
+pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline133.pdf> <D:/01/d
+ata/rollcall/aldf/graphs/cutlinesOnebyOne/cutline134.pdf> <D:/01/data/rollcall/
+aldf/graphs/cutlinesOnebyOne/cutline135.pdf> <D:/01/data/rollcall/aldf/graphs/c
+utlinesOnebyOne/cutline136.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyO
+ne/cutline137.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline138
+.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline139.pdf> <D:/01/
+data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline140.pdf>]
+<cutline141.pdf, id=1153, 415.5525pt x 415.5525pt>
+File: cutline141.pdf Graphic file (type pdf)
+ <use cutline141.pdf>
+<cutline142.pdf, id=1154, 415.5525pt x 415.5525pt>
+File: cutline142.pdf Graphic file (type pdf)
+ <use cutline142.pdf>
+<cutline143.pdf, id=1155, 415.5525pt x 415.5525pt>
+File: cutline143.pdf Graphic file (type pdf)
+ <use cutline143.pdf>
+<cutline144.pdf, id=1156, 415.5525pt x 415.5525pt>
+File: cutline144.pdf Graphic file (type pdf)
+ <use cutline144.pdf>
+<cutline145.pdf, id=1157, 415.5525pt x 415.5525pt>
+File: cutline145.pdf Graphic file (type pdf)
+ <use cutline145.pdf>
+<cutline146.pdf, id=1158, 415.5525pt x 415.5525pt>
+File: cutline146.pdf Graphic file (type pdf)
+ <use cutline146.pdf>
+<cutline147.pdf, id=1159, 415.5525pt x 415.5525pt>
+File: cutline147.pdf Graphic file (type pdf)
+ <use cutline147.pdf>
+<cutline148.pdf, id=1160, 415.5525pt x 415.5525pt>
+File: cutline148.pdf Graphic file (type pdf)
+ <use cutline148.pdf>
+<cutline149.pdf, id=1161, 415.5525pt x 415.5525pt>
+File: cutline149.pdf Graphic file (type pdf)
+ <use cutline149.pdf>
+<cutline150.pdf, id=1162, 415.5525pt x 415.5525pt>
+File: cutline150.pdf Graphic file (type pdf)
+ <use cutline150.pdf>
+<cutline151.pdf, id=1163, 415.5525pt x 415.5525pt>
+File: cutline151.pdf Graphic file (type pdf)
+ <use cutline151.pdf>
+<cutline152.pdf, id=1164, 415.5525pt x 415.5525pt>
+File: cutline152.pdf Graphic file (type pdf)
+ <use cutline152.pdf>
+<cutline153.pdf, id=1165, 415.5525pt x 415.5525pt>
+File: cutline153.pdf Graphic file (type pdf)
+ <use cutline153.pdf>
+<cutline154.pdf, id=1166, 415.5525pt x 415.5525pt>
+File: cutline154.pdf Graphic file (type pdf)
+ <use cutline154.pdf>
+<cutline155.pdf, id=1167, 415.5525pt x 415.5525pt>
+File: cutline155.pdf Graphic file (type pdf)
+ <use cutline155.pdf>
+<cutline156.pdf, id=1168, 415.5525pt x 415.5525pt>
+File: cutline156.pdf Graphic file (type pdf)
+ <use cutline156.pdf>
+<cutline157.pdf, id=1169, 415.5525pt x 415.5525pt>
+File: cutline157.pdf Graphic file (type pdf)
+ <use cutline157.pdf>
+<cutline158.pdf, id=1170, 415.5525pt x 415.5525pt>
+File: cutline158.pdf Graphic file (type pdf)
+ <use cutline158.pdf>
+<cutline159.pdf, id=1171, 415.5525pt x 415.5525pt>
+File: cutline159.pdf Graphic file (type pdf)
+ <use cutline159.pdf>
+<cutline160.pdf, id=1172, 415.5525pt x 415.5525pt>
+File: cutline160.pdf Graphic file (type pdf)
+ <use cutline160.pdf>
+Overfull \hbox (33.48906pt too wide) in paragraph at lines 241--263
+ [] 
+ []
+
+[9 <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline141.pdf> <D:/01/dat
+a/rollcall/aldf/graphs/cutlinesOnebyOne/cutline142.pdf> <D:/01/data/rollcall/al
+df/graphs/cutlinesOnebyOne/cutline143.pdf> <D:/01/data/rollcall/aldf/graphs/cut
+linesOnebyOne/cutline144.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne
+/cutline145.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline146.p
+df> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline147.pdf> <D:/01/da
+ta/rollcall/aldf/graphs/cutlinesOnebyOne/cutline148.pdf> <D:/01/data/rollcall/a
+ldf/graphs/cutlinesOnebyOne/cutline149.pdf> <D:/01/data/rollcall/aldf/graphs/cu
+tlinesOnebyOne/cutline150.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOn
+e/cutline151.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline152.
+pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline153.pdf> <D:/01/d
+ata/rollcall/aldf/graphs/cutlinesOnebyOne/cutline154.pdf> <D:/01/data/rollcall/
+aldf/graphs/cutlinesOnebyOne/cutline155.pdf> <D:/01/data/rollcall/aldf/graphs/c
+utlinesOnebyOne/cutline156.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyO
+ne/cutline157.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline158
+.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline159.pdf> <D:/01/
+data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline160.pdf>]
+<cutline161.pdf, id=1316, 415.5525pt x 415.5525pt>
+File: cutline161.pdf Graphic file (type pdf)
+ <use cutline161.pdf>
+<cutline162.pdf, id=1317, 415.5525pt x 415.5525pt>
+File: cutline162.pdf Graphic file (type pdf)
+ <use cutline162.pdf>
+<cutline163.pdf, id=1318, 415.5525pt x 415.5525pt>
+File: cutline163.pdf Graphic file (type pdf)
+ <use cutline163.pdf>
+<cutline164.pdf, id=1319, 415.5525pt x 415.5525pt>
+File: cutline164.pdf Graphic file (type pdf)
+ <use cutline164.pdf>
+<cutline165.pdf, id=1320, 415.5525pt x 415.5525pt>
+File: cutline165.pdf Graphic file (type pdf)
+ <use cutline165.pdf>
+<cutline166.pdf, id=1321, 415.5525pt x 415.5525pt>
+File: cutline166.pdf Graphic file (type pdf)
+ <use cutline166.pdf>
+<cutline167.pdf, id=1322, 415.5525pt x 415.5525pt>
+File: cutline167.pdf Graphic file (type pdf)
+ <use cutline167.pdf>
+<cutline168.pdf, id=1323, 415.5525pt x 415.5525pt>
+File: cutline168.pdf Graphic file (type pdf)
+ <use cutline168.pdf>
+<cutline169.pdf, id=1324, 415.5525pt x 415.5525pt>
+File: cutline169.pdf Graphic file (type pdf)
+ <use cutline169.pdf>
+<cutline170.pdf, id=1325, 415.5525pt x 415.5525pt>
+File: cutline170.pdf Graphic file (type pdf)
+ <use cutline170.pdf>
+<cutline171.pdf, id=1326, 415.5525pt x 415.5525pt>
+File: cutline171.pdf Graphic file (type pdf)
+ <use cutline171.pdf>
+<cutline172.pdf, id=1327, 415.5525pt x 415.5525pt>
+File: cutline172.pdf Graphic file (type pdf)
+ <use cutline172.pdf>
+<cutline173.pdf, id=1328, 415.5525pt x 415.5525pt>
+File: cutline173.pdf Graphic file (type pdf)
+ <use cutline173.pdf>
+<cutline174.pdf, id=1329, 415.5525pt x 415.5525pt>
+File: cutline174.pdf Graphic file (type pdf)
+ <use cutline174.pdf>
+<cutline175.pdf, id=1330, 415.5525pt x 415.5525pt>
+File: cutline175.pdf Graphic file (type pdf)
+ <use cutline175.pdf>
+<cutline176.pdf, id=1331, 415.5525pt x 415.5525pt>
+File: cutline176.pdf Graphic file (type pdf)
+ <use cutline176.pdf>
+Overfull \hbox (33.48906pt too wide) in paragraph at lines 268--286
+ [] 
+ []
+
+[10 <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline161.pdf> <D:/01/da
+ta/rollcall/aldf/graphs/cutlinesOnebyOne/cutline162.pdf> <D:/01/data/rollcall/a
+ldf/graphs/cutlinesOnebyOne/cutline163.pdf> <D:/01/data/rollcall/aldf/graphs/cu
+tlinesOnebyOne/cutline164.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOn
+e/cutline165.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline166.
+pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline167.pdf> <D:/01/d
+ata/rollcall/aldf/graphs/cutlinesOnebyOne/cutline168.pdf> <D:/01/data/rollcall/
+aldf/graphs/cutlinesOnebyOne/cutline169.pdf> <D:/01/data/rollcall/aldf/graphs/c
+utlinesOnebyOne/cutline170.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyO
+ne/cutline171.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline172
+.pdf> <D:/01/data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline173.pdf> <D:/01/
+data/rollcall/aldf/graphs/cutlinesOnebyOne/cutline174.pdf> <D:/01/data/rollcall
+/aldf/graphs/cutlinesOnebyOne/cutline175.pdf> <D:/01/data/rollcall/aldf/graphs/
+cutlinesOnebyOne/cutline176.pdf>]
+(D:\01\data\rollcall\aldf\graphs\cutlinesOnebyOne\cutlines.aux) ) 
+Here is how much of TeX's memory you used:
+ 13207 strings out of 494053
+ 242652 string characters out of 3146189
+ 281724 words of memory out of 3000000
+ 16035 multiletter control sequences out of 15000+200000
+ 16748 words of font info for 46 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 56i,10n,55p,573b,247s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on cutlines.pdf (10 pages, 3188963 bytes).
+PDF statistics:
+ 1458 PDF objects out of 1728 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 893 words of extra memory for PDF output out of 10000 (max. 10000000)
+

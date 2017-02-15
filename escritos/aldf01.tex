@@ -1,0 +1,330 @@
+\documentclass[letter,12pt]{article}
+\usepackage[letterpaper,right=1in,left=1in,top=1in,bottom=1in]{geometry}
+%\usepackage[letterpaper,right=1.75in,left=1.75in,top=1.25in,bottom=1.25in]{geometry}
+\usepackage[longnamesfirst, sort]{natbib}\bibpunct[]{(}{)}{;}{a}{}{,}
+\usepackage{ae} % or {zefonts}
+\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{lscape} %landcape pages support
+\usepackage{setspace} %allows to change linespacing
+\setstretch{2} %linespacing
+%\onehalfspacing
+%\doublespacing
+\usepackage{pifont} %para tener la ballot cross \ding{55}
+
+
+\usepackage{tabulary} %calcula automáticamente ancho de columnas con texto muy largo
+%% usar LRJC para cálculo automático, lrjc para ancho de columna normal
+\setlength\tymin{10pt}       %% estos permiten cambiar conducta, ver p. 254 LaTeX companion
+\setlength\tymax{\maxdimen}
+
+% avoid clubs and widows
+\clubpenalty=9000 \widowpenalty=9000
+% \displaywidowpenalty=9999
+
+\usepackage[pdftex]{graphicx}
+%\usepackage{graphicx}
+\graphicspath{"c:/data"}
+\usepackage{color}
+%\usepackage[colorlinks]{hyperref}
+\usepackage{tikz} % Easier syntax to draw pgf files (invokes pgf automatically)
+\usetikzlibrary{arrows,shapes.geometric}
+%\usepackage{pgfmath}
+
+\usepackage{multirow} %allows multiple rows in tables
+\usepackage{rotating}% allows sideways tables or other stuff
+
+%%%for submission: sends figs and tables to last pages, other turns footnotes to endnotes
+%%%if endnotes used, place \listofendnotes where you want the endnotes to appear (it must be after the last endnote).
+%%%el archivo "endfloat.cfg" (disponible en C:...\miktex\tex\latex\endfloat) debe guardarse en el directorio de trabajo para jalar sidewaystable al final con demás tablas
+%%\RequirePackage[nomarkers,nolists]{endfloat}
+%%\RequirePackage{endnotes}
+%%\let\footnote=\endnote
+%%\newcommand{\listofendnotes}{
+%%   \begingroup
+%%   \parindent 0pt
+%%   \parskip 2ex
+%%   \def\enotesize{\normalsize}
+%%   \theendnotes
+%%   \endgroup
+%%}
+
+% titlepage without author and date
+%\renewcommand{\maketitle}{
+%   \begin{spacing}{1.5}
+%   \centering
+%   \LARGE{\textbf{\@title}}
+%   \end{spacing}
+%}
+
+% to change margins in a section -- type \begin{changemargin}{deltaLEFT}{deltaRIGHT}
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist
+
+%permiten añadir espacio arriba o abajo del texto de un renglón en una tabla
+\newcommand\T{\rule{0pt}{2.6ex}}         % Top strut at least 2.6ex
+\newcommand\B{\rule[­1.2ex]{0pt}{0pt}}   % Bottom strut at least 2.6ex
+%usage
+%\begin{tabular}[t]{|c|c|}
+% \hline
+% \multicolumn{2}{|c|}{Laplace transforms\T\B}  \\\hline
+% $f(t)$ \T        & $(p)$ \B                     \\\hline
+% $\delta(t)$      & $1$ \T                       \\[.5ex]
+% $\cos\omega_0t$  & $\frac{p}{p^2+\omega_0^2\B}$ \\\hline
+%\end{tabular}
+
+%\bibdata{c://mydocs//1new//}
+
+%\usepackage{cancel} % permits to strike terms in equations
+
+%defines argmax function
+\DeclareMathOperator*{\argmax}{argmax}
+
+%adds comma-separator to thousands
+%\usepackage[np]{numprint}
+
+\begin{document}
+
+\setstretch{1} %linespacing
+
+% The limits of negative agenda power and the mischiefs of faction in Mexico City's Assembly
+
+\title{When cartels split: roll call votes and majority factional warfare in the Mexico City Assembly\thanks{Paper read at the Annual Meeting of the Midwest Political Science Association, Chicago, IL, April 2, 2011. I am grateful to Laura Enríquez for help clarifying aspects of Assembly rules and to Luis Carrera, Rafael Ch Durán, and Marianna Gabutti for research assistance. Special thanks to Mariel Niño Melka for pointing my interest to Mexico City Assembly politics and sharing much of the roll call data analyzed in this paper.}
+      }
+\author{Eric Magar\\ITAM, Mexico City\\ {\small \url{emagar@itam.mx}}}
+\date{\today}
+\maketitle
+% \thispagestyle{empty}  %% removes page numbers
+% \pagestyle{empty}      %% removes page numbers part 2
+
+%\begin{center}\textbf{Draft} --- not for circulation --- comments very welcome\end{center}
+
+\begin{abstract}
+\noindent This paper reports work in progress. Procedural cartel theory \citep{cox.mccubbins.2005} expects intra-majority party conflict in final passage votes to be reduced to a minimum. This is a consequence of agenda control by key party members. I inspect roll call voting in the 4th legislature of Mexico City's Assembly (2006--09) uncovering a frequent majority party split in the floor. Ideal point estimation reveals two lines of Assembly cleavage, one the classic left--right divide on economic issues, the other mostly related to appointments of officers at different levels. While the left-leaning PRD majority showed cohesion in the first dimension, the presence of two distinct factions is manifest in the second. The paper suggests that further research should blame rigid assembly rules combined with an unexpected defeat in the 2006 presidential race for this anomaly.
+\end{abstract}
+
+%\setstretch{2} %linespacing
+
+% OJO: rollrates.r detecta problema: datos incluyen comisión permanente en ptos ideales
+
+%\noindent Una de las hipótesis de V.O.\ Key \citep{key.1949} es que los sistemas de partido hegemónico presentan un faccionalismo agudo. Contrario a lo que la carencia de competencia partidista sugiere a primera vista, los sistemas de partido ``prácticamente único'' están muy lejos de facilitar la toma de decisiones. Es común que la competencia entre facciones del partido sea férrea y paralice muchas decisiones gubernamentales.
+
+\noindent The theme of agenda manipulation and its consequences has received a fair deal of attention in political science. In general terms, the literature has demonstrated how someone in a position to manipulate the voting agenda will, in most but not all circumstances, gain relative influence in collective choice. This sort of influence has been dubbed agenda power, with remarkably fruitful applications in the study of legislatures \citep[eg.][]{baron.ferejohn.1989, weingast.marshall.1988, laver.shepsle.1990}.
+
+%%Agenda power is any special ability to decide what gets voted, when, and how \citep[][:338--40]{schwartz.1987}. \citet{cox.mccubbins.1993,cox.mccubbins.2005} put the notion at the core of their demonstration that an unrecognized form party government has been in operation in the US House of Representatives since the late 19th century. Traditional advocates of party government focused their attention in the final steps of the process, suggesting that it is the majority's ability to produce a cohesive voting bloc that is the source of influence. Recognizing that heterogeneity often renders US parties unable to muster unity on important and divisive votes \citep{krehbiel.1993}, Cox and McCubbins argue that influence can occur at earlier stages of the legislative process. For systems such as the US, where achieving party discipline is costly, it is the majority's seizure of the chamber's agenda setting offices that is key to its success.
+
+Agenda power is any special ability to decide what gets voted, when, and how \citep[][:338--40]{schwartz.1987}. \citet{cox.mccubbins.1993,cox.mccubbins.2005} put the notion at the core of their demonstration that an unrecognized form party government has been in operation in the US House of Representatives since the late 19th century. Recognizing that heterogeneous US parties have often been unable to muster unity on important and divisive votes \citep{krehbiel.1993}, Cox and McCubbins argue that party influence can occur at earlier stages of the legislative process and not just in its final steps. For systems where achieving floor discipline is costly, it is the majority's seizure of the chamber's agenda setting offices that is key to its success.
+
+They generalize the approach to any legislature by distinguishing offices with two types of agenda power, positive and negative (Cox and McCubbins 2005:222; Cox \citeyear{cox.2006}). Positive agenda power grants the officeholder proposal rights, the capacity to push bills past the ``gauntlet'' of gate-keepers to a final passage vote on the floor. Negative agenda power gives veto rights, the capacity to prevent bills from reaching the floor for final passage vote. Knowledge of what determines the mix of offices with positive and negative agenda power in legislatures worldwide remains limited. But one key intuition is that similarity of purpose within the majority party or coalition is among the determinants. The more internal division in preferences, the more members wish to limit the proposal rights of other partners, thus strengthening veto rights across the board. The value of majority is then its power to keep certain issues off the agenda, preserving the associated status quo policies. The more homogeneous the party preferences, the more members will agree to expand each other's proposal rights, thereby weakening veto rights. The value of majority is then the power to push certain issues onto the agenda, changing the associated status quo policies.
+
+One direct expectation of such view of parties in legislatures is that the majority should seldom divide in final passage votes, even in the presence of acute intra-party conflict. By virtue of cartelized agenda control---ie., putting assembly government at the service of majority members only---any divisive issue ought to be removed from the agenda before it is scheduled for a final passage vote. What remains has the approval of all relevant party members, and therefore should receive support by a united majority.
+
+The paper inspects the case of the Mexico City Assembly (\emph{Asamblea Legislativa del Distrito Federal}), concentrating on the 4th legislature in session between September 2006 and September 2009. The assembly has 66 deputies, 40 elected in single-member districts by plurality, the rest by closed-list proportional representation, none eligible to stand for immediate reelection at the end of the three-year period. This general setting has been shown to create strong incentives for party discipline in Congress \citep{rosas.langston.2011}. The assembly is an interesting laboratory because, unlike sub-national politics elsewhere in Mexico---moved almost exclusively by machine politics (**cite)---elections and bargaining in the legislative arena have an important ideological component, echoing the issue battles of the federal Congress. It is also interesting because the left-of-center Party of the Democratic Revolution, which has dominated the electoral arena since the city began electing its authorities in 1997, has also been known to be deeply divided by so-called ``tribes'' with strong bases among the city's population. I study the assembly's legislative process in search for some of the consequences of factionalism in the majority party.
+
+Analysis reveals that, contrary to expectation, the majority in the 4th legislature manifested a deep split in the floor. While the party could stand united in classic left--right battles involving items such as spending priorities or gay civil unions, electoral regulation and confirmations systematically split them in two opposing and equally-sized factions. The half in control of Assembly government often relied on opposition votes to defeat the other half of the party.
+
+The paper proceeds thus. Section 1 reviews procedure in the assembly, uncovering a gamut of agenda powers in the hands of the Assembly speaker, with much more limited opportunities for other groups. A key characteristic are barriers to exit in the majority party rendering institutions quite rigid in the face of exogenous shocks. Section 2 describes legislative parties in recent years and the voting data in the 4th legislature, consisting of 521 roll calls in the three-year term. Section 3 scales deputies' ideal points from all contested votes, using the MCMC method of estimation. The procedure reveals a schism in the ranks of the majority party. Section 4 (under construction) discusses this anomaly in the light of procedural cartel theory and the idiosyncracies of Mexico City politics. The section (will) evaluate the hypothesis that the 4th legislature is anomalous from other ones, the majority split materializing as a consequence of the unexpected defeat in the 2006 presidential race, leaving  the faction that would have controlled most federal resources under-represented in the city. Institutional rigidity made the split evident. Section 5 (will) conclude.
+
+\section{Rules of engagement}
+
+Assembly procedures are, for the most part, set out in the Government Statute, issued by Congress, the Assembly's Organic Law, and two regulations, for Internal Government and for Committees.\footnote{The 1990s reform did not grant the DF state sovereignty, and it therefore has no constitution. Instead, the Estatuto de Gobierno del Distrito Federal, issued by the federal Congress in July 1994 and last amended in April 2008, is the fundamental law, mandating the broad lines of Assembly internal organization and granting the Assembly power to issue procedural rules in harmony with the Statute. The present Ley Orgánica de la ALDF dates from December 2002, last amended October 2009; the Reglamento para el Gobierno Interior de la ALDF from May 2003, last amended October 2010; and the Reglamento Interior de las Comisiones de la ALDF from December 2003, last amended November 2010. One final Regulation for Financial Oversight, not reviewed for this paper, completes the ALDF procedural venues. All are available at \url{http://www.aldf.gob.mx/marco-juridico-102-1.html}.} They create more incentives for party unity.
+
+Rules make a sharp distinction between deputies who belong in a ``parliamentary group'' from those that do not. The group-less are second-class deputies who cannot chair committees and are eligible to receive committee assignments, staff, and other valuable legislative resources only after groups have been satisfied.\footnote{Organic law 85-II; Internal government 15.} Parties with fewer than three deputies cannot form a group, but their members can opt at the start of the legislature (but never later) to caucus with another group.\footnote{Organic law 85-I.} Once in a group, a deputy foregoes the possibility of joining another one later.\footnote{Internal government 15.} Each group elects a coordinator, whom it can replace at will.\footnote{Organic law 87.} So unless you have the votes within your party to replace the incumbent coordinator, splitting is prohibitively costly---just like some industries have high entry costs, Assembly rules set high exit costs. This feature, it will be seem later, might well drive a good deal of majority party behavior in the 4th legislature. I henceforth refer to groups as simply parties---with deputies from tiny parties and those who have split or been expelled independents.
+
+Assembly government can be cartelized when a party enjoys a majority, but becomes collegial in case of plurality, thereby creating incentives for the majority leader to not fully abandon some party factions, in order to avoid splits leaving the party without majority status.\footnote{Leader and dissenting factions would seems to play a game of chicken, both facing heavy penalties if the split materializes.} Assembly government is vested in two distinct bodies, the plural Directing Board (\emph{Mesa Directiva}) and the majority-controlled Government Committee (\emph{Comisión de Gobierno}). The Board manages the floor when the Assembly is in session: its president has power to declare recesses, extend sessions, or even suspend them; participates in preparing the day's order with the Government Committee; is responsible for sending bills to the proper committee for a report; and decides how to group a bill's articles in so-called particular votes.\footnote{Organic law 31, 36; Internal government 135.} While all this apparently adds up to important agenda power, the Board is severely constrained vis-à-vis the Government Committee, and can only be influential in the legislative process under very proper circumstances. The Board suffers frequent turnovers, its eight members and president replaced monthly by the floor, and possibly sooner if some deputy files a motion that is adopted in plenary vote.\footnote{Organic law 32, 40.} When a standing committee chair claims that a bill in its jurisdiction was wrongly sent to another committee, it is the Board president who adjudicates---so the new Board can redress the predecessor's procedure.\footnote{Organic law 36-VII.} Should it arise, all the Committee needs to remove Board opposition is some patience. To make things worse, when Assembly is not in session---seven months every year---Board duties are performed directly by the Committee.\footnote{Statute 51-III; Organic law 27.}
+
+In practice, Assembly steering happens in the Government Committee. Party coordinators are members ex officio, their votes weighted relative to floor party sizes. While vote weighting guarantees majority control of the Committee, extra members are added to prevent smaller parties from using the vanishing quorum in Committee business---no Assembly committee can meet with less than half its members.\footnote{Internal government 131.} The method is contingent on the existence of a majority party, when Committee membership is doubled with majority party deputies; otherwise, extra members will render the Committee proportional to floor parties.\footnote{Organic law 41.} The presidency of the Government Committee belongs to the majority party if one exists, but rotates yearly among the three largest parties otherwise.\footnote{Organic law 42.}
+
+The Committee has power to remove members (excluding coordinators), proposing a replacement to the floor.\footnote{Organic law 44-IV.} It has the exclusive right to propose standing committee sizes, members, and chairs for floor approval.\footnote{Organic law 44-III, 63.} And when the Assembly is not in session, the Committee receives new bills and send them to the committee of its choice, with no obligation to inform the floor.\footnote{Internal government 51-III.} Standing committees, unlike the plenary, are in permanent session, so the Government Committee has ample opportunities to bypass opposition in the Board or elsewhere.
+
+A bill can bypass the committee stage for immediate floor discussion if the rules are suspended by floor majority.\footnote{Internal government 133.} Normally bills begin their life in standing committee, where they must be reported, with any committee-introduced amendments, for floor consideration by a majority of its members.\footnote{Organic law 63.} Report antagonists can reserve articles for separate floor discussion.\footnote{Organic law 68, Committees 57} When a standing committee has not produced a report within 30 days, the Board can request an extension to the floor; if denied, the Board president is authorized to discharge the bill and send it to the Rules committee (\emph{Comisión de Normatividad Legislativa}) for a new report.\footnote{Internal government 32, 88.} A standing committee therefore enjoys gatekeeping power provided the Board or the floor is deferent (if the extension is granted, the Board will have changed at the arrival of the new deadline).
+
+All this adds up to important negative agenda power for the Government Committee and for members of the majority in the standing committees they control. Procedure also offer the Government Committee one final advantage through the Rules committee. When a bill is discharged, this committee has no further time frame to produce a report, freezing it indefinitely if so wished. And if Rules committee appointees are chosen carefully by the Government Committee, they also acquire positive agenda power, guaranteeing a tailor-made report for floor consideration. Rules also has the power to interpret rules and regulations regarding parliamentary procedure.\footnote{Organic law 66-III.}
+
+Despite the numerous venues elaborating it, formal procedure remains imprecise about the possibility of Government Committee and/or Board to prevent a bill duly reported from being scheduled in the day's Order for floor consideration. What is clear is that, once a report is scheduled, leaders and deputies generally lose control of the process due to the forward voting agenda that is standard legislative practice in Mexico \citep{heller.weldon.nd}. Bills are first voted by roll call ``in general,'' against the status quo. If the vote fails, the process ends. If successful, however, its articles are voted ``in particular.'' Any deputy can request one or more articles to be reserved for separate discussion and possible amendment, so all legislation in the floor is de facto considered under an open rule.\footnote{Internal government 135.} Heller and Weldon put it bluntly: ``deals parties make in order to get bills out of committee and approved at the first reading can be picked apart article by article in the second stage'' \citeyearpar[][:4]{heller.weldon.nd}.
+
+In sum, agenda power is granted thus. (1) Standing committees have conditional negative agenda power---they can stop legislation if the Board agrees (by not requesting extension) or floor agrees (by granting the extension). (2) The Government Committee has negative agenda power---it appoints and can choose the reporting committee, so should always be able to stop any bill from floor consideration. (3) The Government Committee has positive agenda rights---with floor support, it can force a report by discharging the bill and sending it to Rules. (4) In rare circumstances, the Board can acquire positive agenda rights---by choosing a committee that is both friendly and very fast to report the bill, before the next Board can redress procedure. And (5) once the gates are open, bills are in the wild, and anything can go wrong. If procedural cartel theory is right, majority leaders should be extremely careful to avoid unintended consequences in the plenary.
+
+\section{Voting in the 4th legislature}
+
+I now inspect roll call voting in the 4th Legislature with tenure between September 2006 and September 2009. The 4th was elected in July 2006 concurrent with the presidential race that former Mexico City Mayor, Andrés Manuel López Obrador of the Party of the Democratic Revolution (PRD), lost by wafer-thin margin to Felipe Calderón, of the right-of-center National Action Party (PAN). López Obrador remained the clear front-runner for at least two years, but a clever campaign by the PAN cornered López Obrador into committing strategic mistakes in the final stages of the campaign that placed him second at the end of the race. As is well known, he never conceded, compelling instead the party to mobilize popular movements in an attempt to have the election annulled \citep{estrada.poire.2007, magar.romero.rcp.2007, eisenstadt.2007}. While the party had no choice but follow the lead at first, polarization and intransigence became costlier for those in the party who did win elected office, especially the Mexico City government.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{lrrrrrrrrrr}
+            & \multicolumn{10}{c}{\small{Legislature}} \\
+            & \multicolumn{2}{c}{\footnotesize{1st}} & \multicolumn{2}{c}{\footnotesize{2nd}} & \multicolumn{2}{c}{\footnotesize{3rd}} & \multicolumn{2}{c}{\textbf{\footnotesize{4th}}} & \multicolumn{2}{c}{\footnotesize{5th}}   \\ [-.8ex]
+            & \multicolumn{2}{c}{\footnotesize{1997-2000}} & \multicolumn{2}{c}{\footnotesize{2000-03}} & \multicolumn{2}{c}{\footnotesize{2003-06}} & \multicolumn{2}{c}{\textbf{\footnotesize{2006-09}}} & \multicolumn{2}{c}{\footnotesize{2009-12}}   \\
+Caucus      & $N$ & \emph{\%} & $N$ & \emph{\%}  & $N$ & \emph{\%}  & $N$ & \emph{\%} & $N$ & \emph{\%} \\ \hline
+\small{Revolución Democrática (PRD)}
+            & 38  & \emph{58} & 19  & \emph{29}  & 37  & \emph{56}  & 34  & \emph{52} & 34  & \emph{52} \\
+\small{Acción Nacional (PAN)}
+            & 11  & \emph{17} & 17  & \emph{26}  & 16  & \emph{24}  & 17  & \emph{26} & 15  & \emph{23} \\
+\small{Revolucionario Institucional (PRI)}
+            & 11  & \emph{17} & 16  & \emph{24}  &  7  & \emph{11}  &  4  &  \emph{6} &  8  & \emph{12} \\
+\small{Trabajo (PT)}
+            & --  &       --  & --  &       --   & --  &        --  & --  &       --  &  5  & \emph{8}  \\
+\small{Verde Ecologista (PVEM)}
+            &  4  &  \emph{6} &  8  & \emph{12}  &  5  &  \emph{8}  &  3  &  \emph{5} &  3  & \emph{5}  \\
+\small{Democracia Social (DS)}
+            & --  &       --  &  3  &  \emph{5}  & --  &        --  & --  &       --  & --  &      --   \\	
+\small{Alianza Nacional (PANAL)}
+            & --  &       --  & --  &       --   & --  &        --  &  4  &  \emph{6} & --  &      --   \\
+\small{Independent}
+            &  2  & \emph{3}  &  3  &  \emph{5}  &  1  &  \emph{2}  &  4  &  \emph{6} &  1  & \emph{2}  \\	
+\small{Total}
+            & 66  & \emph{100}& 66  & \emph{100} & 66  & \emph{100} & 66  & \emph{100}& 66  & \emph{100}\\
+\multicolumn{11}{l}{\footnotesize{Sources: prepared with information in Diario de Debates at \url{http://www.aldf.gob.mx} (visited}} \\ [-.8ex]
+\multicolumn{11}{l}{\footnotesize{February 24, 2010).}} \\
+\end{tabular}
+ \caption{\emph{Party contingents in the ALDF since 1997. Independents row includes group-less deputies in each legislature: one each PFCRN and PT in the 1st; one PT and two Convergencia in the 2nd; one México Posible in the 3rd; one PT, one Convergencia, and two Democracia Social in the 4th; and one PANAL in 5th.}}\label{T:ptyCont}
+\end{center}
+\end{table}
+
+The new city assembly inherited the polarization between López Obrador's PRD and Calderón's PAN. Their parties won nearly four-fifths of Assembly deputies in 2006, as Table \ref{T:ptyCont} reports, the PRD controlling the majority by a single deputy. The PRD has governed the city since mayoral elections were instituted in 1997. With the exception of the 2000 election, it has always won majority status in the assembly. In the 4th, however, tensions inside the majority party become increasingly manifest.
+
+%%Whereas state elections have tended to be remarkably non-ideological (CITE --- the legislative process presumably as well), the Mexico City Assembly is an interesting laboratory that routinely debates themes with great ideological content. The city became the first to ban smoking in public places (later generalized to some extent by Congress), liberalized abortion laws in 200x, legalized gay marriage...
+
+%%The majority party is also famous for its factionalism. Story on leadership elections or another showing acute intra-party tensions.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{lcccccccc}
+                        &   PRD     &&           &           &           &           && \\ [-.8ex]
+                        & majority  &&   PAN     &    PRI    &  PANAL    &   PVEM    && $N$\\ \cline{2-2} \cline{4-7} \cline{9-9}
+                        & \multicolumn{8}{c}{Part A. Rice scores} \\
+All votes               & .94       && .99       & .99       & .99       &  .99      && 521\\
+Contested votes only    & .83       && .98       & .99       & .96       &  .98      && 175\\
+Minority vote >10\%     & .84       && .98       & 1         & .95       &  .98      && 137\\ [.5ex]
+                        & \multicolumn{8}{c}{Part B. Party on winning side} \\
+All votes               & \emph{98} && \emph{86} & \emph{87} & \emph{88} & \emph{73} && 521\\
+Contested votes only    & \emph{93} && \emph{61} & \emph{70} & \emph{65} & \emph{58} && 175\\
+Minority vote >10\%     & \emph{89} && \emph{44} & \emph{62} & \emph{56} & \emph{50} && 137\\ [.5ex]
+                        & \multicolumn{8}{c}{Part C. Roll rates} \\
+All votes               & \emph{2}  && \emph{10} & \emph{10} & \emph{8}  & \emph{24} && 521\\
+Contested votes only    & \emph{6}  && \emph{29} & \emph{21} & \emph{23} & \emph{33} && 175\\
+Minority vote >10\%     & \emph{9}  && \emph{41} & \emph{26} & \emph{26} & \emph{38} && 137\\
+                        & \multicolumn{8}{c}{Part D. >40\% voted nay yet bill passed} \\
+All votes               & \emph{4}  && \emph{10} &    --     &    --     &    --     && 521\\
+Contested votes only    & \emph{13} && \emph{29} &    --     &    --     &    --     && 175\\
+Minority vote >10\%     & \emph{18} && \emph{41} &    --     &    --     &    --     && 137\\
+\end{tabular}
+\caption{\emph{Rice scores, winning sides, and roll rates for parties with at least three deputies. Entries in italics are percentages of votes in 2006--09 period. Right-most column reports total votes in the category. Abstentions treated as missing values.}}\label{T:ricerolls}
+\end{center}
+\end{table}
+
+Our first approach to study cohesion involves Rice scores for parties with three deputies at least. Party $j$'s score for item $i$ is the absolute difference of aye and nay votes as a proportion of votes cast: $Rice_{ij} = | Ayes_{ij} - Nays_{ij} | / (Ayes_{ij} + Nays_{ij})$. The score takes a minimum value of zero, when party $j$'s ayes and nays split evenly in vote $i$, and a maximum of one, when everyone in the party votes likewise. The statistic has problems to handling abstentions \citep[coded as missing values, but see][]{carey.2002, weldon.2002b} and smaller parties \citep{desposato.2005}, but remains the most widespread measure of legislative cohesion. Table \ref{T:ricerolls}.A reports average Rice scores by party for all votes in the period. Figures confirm that Assembly parties achieved near-perfect cohesion scores systematically --- the modal entry is .99. Since unanimous floor votes (346, two-thirds of all), by removing inter-party conflict, also leave no room for intra-party dissent, the table also considers subsets of votes with increasing degrees of conflict. The second row inspects contested votes only, those with at least one deputy against the rest; the third raises the threshold to exclude bills where less than 10 percent of deputies present voted against the rest. Excluding consensual bills from the denominator, however, has virtually no effect in cohesion scores. The one exception to this is notable, for it involves the majority party. The PRD achieved a .94 Rice score when all votes are included, and that was the row minimum. It drops to .83--.84 when unanimous legislation is excluded from the count, a sign that the PRD had more difficulty to maintain floor unity than other parties on the 4th legislature.
+
+The second approach focuses on some consequences of party disunity. If the majority party achieved passage of legislation desired by most members despite internal splits, then no substantive consequences of disunity would be felt. Disunity becomes more problematic from this perspective when the party cannot achieve goals sought by most of its members. Table \ref{T:ricerolls}.B reports rates at which parties were on the winning side of passage in the floor--- when a party majority voted in favor and the measure passed or voted against and the measure was defeated. A natural gap emerges in the rates of majority and minority parties: the PRD was on the winning side virtually always (98 percent), all votes considered, and about nine out of ten times excluding consensual votes. When a sizeable minority emerged, the opposition was on the right side of history about 50 percent on average. Patent differences exist between minority parties. The PAN was by far the party that won least---in only 44 percent of votes with a sizeable minority, compared to 62, 56, and 50 for smaller parties, an indication that the sizeable minority was mostly made of panistas. That smaller minority parties lost less often is suggestive that they were pivotal for passage more often than the PAN---in the case of the PRI, 50 percent more often. This begs the question of why a party with majority status like the PRD would ever need or wish to make concessions to small, pivotal parties in the first place. All this points again to the possibility that, as conflict arises in decision-making, the majority party had often to buy the extra votes needed for passage among minor parties extra votes for passage. I suspect a tendency to split in the floor stages.
+
+A related measure bearing direct link to negative agenda control are roll rates. As in \citet{cox.mccubbins.2005}, a party is said to have been \emph{rolled} in final passage when a majority of members voted against yet the measure was approved. A priori, since no party can fully prevent internal strife, all may suffer rolls in final passage. But partisan theory underscores a key difference between majority and minority parties. By virtue of agenda cartelization, the majority (but not the minority) should always be in a position to prevent this from materializing, stopping such measures from being scheduled for floor consideration before it is too late. Partisan theory therefore expects the majority to seldom be rolled in passage votes; minority parties should be routinely exposed to rolls. Table \ref{T:ricerolls}.C reports parties' roll rates, revealing that the roll rate for the PRD was indeed small, about 2 percent of all vote, whereas opposition parties were between 4 and 12 times more exposed to rolls in the period. Majority party rolls in the US Congress, averaging 1.8 percent since 1945, are not far off \citep[][table 5.1]{cox.mccubbins.2005}. But removing the large bloc of consensual votes reveals a bleaker image of the majority, its roll rate trebling when only votes with at least one dissenting deputy are admitted, and reaching 9 percent in votes where a sizeable minority formed. By definition, in that 9 percent of votes the sizeable minority included the majority of the PRD, unable to prevent passage of the measure under consideration. While the PAN's roll rate, at 40 percent, is much higher, the right-of-center party had access to negative agenda control. For some reason, the PRD was often in a position to prevent splits by carefully setting the Assembly's agenda.
+
+Relaxing the definition of rolls to focus on instances when a very large portion of the party voted nay, yet the measure passed, offers additional insight into the majority's internal travails. Figure \ref{T:ricerolls}.D reports the share of votes where 40 percent or more members voted against final passage but lost. This, of course, includes all rolls reported in part C, plus votes affecting a substantial, but not majoritarian, group of party members. While a bill successful in the floor with a 49--51 aye vs.\ nay party breakdown counts as a roll, the same bill with a 51--49 breakdown does not. The final statistic counts both for the two largest parties only. The change makes absolutely no difference for the PAN. But rates double for the majority in each conflict category. A large group of majority party members was systematically beaten by co-partisans in alliance with outside support in nearly two-fifths of votes with a sizeable minority. As revealing as aggregate statistics are, they say nothing about the identity of majority party losers. The unsuccessful group might rotate membership in different votes, making all equally likely to be on the wrong side, but it is just might as well be the same people were beaten over and over. The next approach reveals that the latter was, in fact, the case.
+
+\section{Ideal point estimation}
+
+The third approach borrows the spatial theory of voting to estimate legislators' ideal points from contested roll call votes. Analysis relies on simplifying assumptions to generate a picture that conveys meaning to deputies' floor behavior.\footnote{The method to recover members' ideal points from their roll call votes is discussed at length in \citet{poole.2005}. Applications to Mexican politics include \citet{desposato.cantu.2010}, \citet{estevez.magar.rosas.2008}, \citet{magar.estevez.rosas.2010}, \citet{nino.melka.2010}, \citet{robles.2009}, \citet{rosas.langston.2011}, and \citet{sanchez.magaloni.magar.2011}.}. The fundamental premises are three. Policy can be mapped onto a low-dimensional space, alternatives appearing as distinct points with coordinates on that space. Next, deputies' have a unique ideal point in the policy space---where they would set policy were they autocrats---welfare dropping as a specific policy alternative is more distant from that ideal point. And although there is random error involved in the process, voting is sincere.
+
+\begin{figure}
+\begin{center}
+   \includegraphics[width=7.5cm]{../graphs/eigenvalues.pdf} \\
+ \caption{\emph{Estimating dimensionality in Mexico City's Assembly. The plot reports the eigenvalues of the double-centered agreement score matrix for the 4th legislature. Eigenvalues drop fairly smoothly from the third value onwards, an indication that the data are most likely two-dimensional \citep[cf.][]{poole.2005}. Abstentions and absences coded as nays for this computation.}}\label{F:Eigen}
+\end{center}
+\end{figure}
+
+\begin{table}
+\begin{center}
+    \begin{tabulary}{\textwidth}{cLcc}
+           &             &          & Aye vote              \\ [-.8ex]
+           &             & Cleavage & pulls ideal           \\ [-.8ex]
+      Date & Issue voted &  line    & point towards         \\ \hline
+      Nov.~9, 2006  & Gay couples eligible for certain benefits reserved for married couples & vertical   & west  \\
+      Dec.~26, 2006 & Appointment of five new electoral magistrates                          & horizontal & south \\
+      Dec.~28, 2006 & Lower debt ceiling for city government's budget for FY2007             & vertical   & east  \\
+      May 29, 2008  & Confirmation of city's new electoral regulatory board                  & horizontal & south \\ \hline
+    \end{tabulary}
+  \caption{\emph{Priors given to four item parameters imparting meaning to the policy space. Vertical cleavage lines separate left vs.\ right (east--west axis), horizontal ones separate coalitions in appointments process (north--south axis).}}\label{T:Priors}
+\end{center}
+\end{table}
+
+For the procedure to produce meaningful estimates, certain parameters have to be fixed a priori to reflect elements of the assembly analyzed. One such parameter is the dimensionality of policy. A preliminary study of the Assembly for a subset of the roll calls in the 4th legislature \citep{nino.melka.2010} hints that a two-dimensional space is appropriate. A statistical approach confirms that most variance in the data is explained by the first two dimensions---Figure \ref{F:Eigen} reveals a smooth and steady decline from the third value onwards.\footnote{The procedure described by \citet[][:141--55]{poole.2005} relies on the share of times that any two deputies in the assembly voted likewise (treating abstentions and absences as nay votes) to get the $67 \times 67$ agreement score matrix. This matrix is then normalized by double-centering process. Figure \ref{F:Eigen} reports this matrix's eigenvalues.} And since the method is agnostic about the substantive content of the space recovered, both model identification and result interpretation necessitate fastening a few votes' parameters arbitrarily to give meaning to the horizontal and vertical axes of space. Prior research \citep{nino.melka.2010} determined that one line systematically cleaving deputies in the legislature distinguished a classic left--right divide in politics, those to the left (right) supporting (opposing) more socially liberal policy as well as spending targeted towards the PRD's core constituents. Another, orthogonal line of cleavage is associated with the appointment and ratification of government officers, especially the city's electoral authorities. I therefore calibrated parameters of four items in the data, described in Table \ref{T:Priors}, to make the x-axis the left--right spectrum and the y-axis a measure of confirmation coalitions in general.
+
+\begin{figure}
+\begin{center}
+   \includegraphics[width=14cm]{../graphs/static.pdf} \\
+ \caption{\emph{Ideal point estimates in Mexico City's Assembly 2006--09. The plot reports the median of each deputy's ideal point posterior distribution. Black circumference are coordinators of parties eligible for group status. The x-axis is a conventional left--right continuum, the y-axis positions in confirming certain appointed city officers.}}\label{F:Static}
+\end{center}
+\end{figure}
+
+The MCMC method was used to perform a Bayesian estimation of the model \citep{clinton.jackman.rivers.2004}.\footnote{Analysis was performed in R \citeyearpar{r.cite.2009} and Bugs \citep{winbugs.2000}. Ten thousand iterations of models reported sufficed to achieve convergence, sampling every tenth of the second half to produce the posterior density. Graphs report the median posterior value of the parameter in question.} With 66 legislators (plus one replacement in the period), a tabular report of estimates appears impractical, relying instead on a graphical approach. Each point in Figure \ref{F:Static} represents one deputy's estimated ideal point in the policy space of the 4th legislature, color-coded by party. In accordance with the  spatial voting premises, the most straightforward interpretation of these quantities is that, the closer two deputies' ideal points are from each other in space, the likelier it is that that they voted likewise in a randomly picked roll call, that probability dropping as points deputies become more distant from each other. PAN deputies, for instance, appear in a compact cluster in the north-east, indicating a strong tendency to remain united. So did the PRD cluster in the north-west, who followed the party's coordinator (black circles show party coordinators, all of them members of the government committee). At the same time, panistas and this subset of perredistas, by virtue of the gap between them, often confronted each other in final passage.
+
+\begin{figure}
+\begin{center}
+   \includegraphics[width=14cm]{../graphs/staticcutlines.pdf} \\
+ \caption{\emph{Item cut-lines 2006--09. Each line represents a roll call, with deputies on one side expected to vote aye, the rest nay (subject to random noise).}}\label{F:StaticCutlines}
+\end{center}
+\end{figure}
+
+This method has power to make plain clear what previous statistics only hinted. PRD deputies split on two relatively homogeneous, but markedly different from each other, factions. Those voting against each other were more or less always the same people, pulling them apart in the plot. And there is structure in the majority's internal strife. Both factions were mostly against the PAN, each located at the edge of a triangle. The majority generally managed to remain united in left vs.\ right votes, those confronting alternatives orientated in the x-axis. In fact, if only x-axis coordinates are taken into account, majority deputies' ideal points combined neatly at the left end. But on issues orientated on the y-axis, those associated with appointments and confirmations, the majority became incapable of ensuring unity. Majority rolls must have happened along this axis (something I plan to investigate more carefully in a future version). Figure \ref{F:StaticCutlines}, a replica of ideal points also including the cleavages estimated for each contested vote (the so-called cut-lines in the spatial model), makes the point. Each line divides space into the predicted aye and nay camps of a roll call vote. A large number of nearly vertical cleavages indicate roll calls pitting a united left against the right. While less numerous, there were also horizontal cleavage lines running through the very middle of the majority. The northern and southern PRD (so to speak) included 17 deputies each (the appendix lists their names and districts). Each could side with the PAN's 17 to beat the other majority faction, a trick that the northern did, but not the southern---the factional roll rate differential in contested votes is revealing: 4\% for the northern half, 15\% for the southern. The southern include deputies aligned with López Obrador in his failure to recognize the federal administration of Felipe Calderón.
+
+With a 17--17 split between the halves of the majority, attendance acquired all-importance to ensure enough votes to win on issues dividing the PRD, and smaller parties in the center appear to have played their influence right. The central location of PRI, PANAL, and PVEM could indicate that they sold their votes on the margin to one PRD half or the other to make up for absent deputies. Case studies will reveal this interesting exchange in a future iteration.
+
+\section{The limits of negative agenda control}
+
+If the discussion on the majority's careful negative agenda management is correct, why is the north--south divide in the majority so manifest in Figure \ref{F:Static}? Shouldn't prominent members stop measures from reaching the floor when they anticipate a fraternal confrontation? Was the majority unable to prevent them from reaching the floor, or unwilling to stop it? While these are questions that I will address through case studies of roll call votes, I advance some tentative answers.
+
+(1) Rigid rules play in favor of party discipline, as discussed in section 1. But they also leave the party incapable of adapting to changing circumstances. It would seem that when candidates were selected for the 2006 federal and city elections, the López Obrador faction---in charge of the outgoing city government and confident that it would simply ride to victory in the presidential race---might well have given up Assembly control to the other faction as part of the party's power-sharing agreements. Defeated, López Obrador at first got all the party en route to polarization. As agreed, the non-López Obrador crowd gained control of the new Assembly's Government Committee. Few months later, when the strategy to annul the election failed, López Obrador and his people (including many Assembly deputies) became increasingly isolated within the party, factions in control of both city and Assembly governments aiming to a more pragmatic relation with the federal government. López Obrador continues relying on anti-system tactics. Intra-majority tensions have persisted in the 5th legislature (which will be studied), with (apparently) much less floor division---the split was internalized in Assembly government?
+
+\begin{figure}
+\begin{center}
+\begin{tabular}{cc}
+   \footnotesize{2006Qm3} &
+   \footnotesize{2007Qm1} \\
+   \includegraphics[width=6.5cm]{../graphs/2006-3.pdf} &
+   \includegraphics[width=6.5cm]{../graphs/2007-1.pdf} \\
+   \footnotesize{2007Qm2} &
+   \footnotesize{2007Qm3} \\
+   \includegraphics[width=6.5cm]{../graphs/2007-2.pdf} &
+   \includegraphics[width=6.5cm]{../graphs/2007-3.pdf} \\
+   \footnotesize{2008Qm1} &
+   \footnotesize{2008Qm2} \\
+   \includegraphics[width=6.5cm]{../graphs/2008-1.pdf} &
+   \includegraphics[width=6.5cm]{../graphs/2008-2.pdf} \\
+\end{tabular}
+ \caption{\emph{Dynamic ideal points estimation (quadrimesters). Only the first two years are reported due to space considerations.}}\label{F:Dynamic}
+\end{center}
+\end{figure}
+
+(2) Polarization inside the PRD became more and more acute at time went by. Figure \ref{F:Dynamic} estimates a dynamic version of the spatial model \citep[cf.][]{magar.estevez.rosas.2010,martin.quinn.2002}.\footnote{Trial-and-error led to discover that fixing one legislator in the north of space---Mrs.\ Laura Piña, of the PRD, who in \citep{nino.melka.2010} was notable for toeing the line of the group coordinator---speeded parameter convergence of the dynamic model considerably.} Ideal points in quadrimester $t$ are centered on the value they obtained in $t-1$, plus some slack, letting them adjust to changing vote patterns. The PRD was relatively united at the start of the 4th legislature, but grew ever more internally polarized as quadrimesters progressed. The underlying story is surely one of (a) renewing election authorities about half-way through the legislature; and (b) a primary election to select party candidates for 2009. (Will expand on the ``Juanito'' affair of 2009.)
+
+(3) Some appointments cannot be postponed indefinitely. Local election authorities manage not only elections for citywide office, they also do it to an important extent for candidate selection. And this is an area of intense, often virulent competition among PRD ``tribes''---check \citet{bruhn.1997}, ``Juanito'' case. An election authority friendlier to your faction is priceless.
+
+(4) While some of the division may be grand-standing---López Obrador forcing the mayor and his support in the party to seek passage votes with the arch-enemy PAN---the exclusion of the southerners from the appointments game makes them sure big losers. Is this the beginning of a permanent split in the party?
+
+(5) Case studies of the few cases where the southern López Obrador crown sides with the devil (PAN) to defeat the other half of the majority. Obradoristas can be pragmatic when the need arises.
+
+
+\section{Conclusion}
+
+(Forthcoming.)
+
+\section*{Appendix: posterior majority faction members}
+
+Membership is inferred from the posterior y-axis coordinates of majority party deputies in Figure \ref{F:Static}. Parentheses include their method of election---all were elected in single-member districts---, their district number, and whether they were the titular representative or the substitute.
+
+\subsection*{Northern PRD---Roll rate in contested votes: 4\%}
+
+Juan Carlos Beltrán (mr28p), Nancy Cárdenas (mr36p), Sergio Cedillo (mr24p), Víctor Hugo Círigo (mr22p), Esthela Damián (mr11p), Elba Garfias (mr19p), Samuel Hernández Abarca (mr29p), Benito Antonio León (mr16p), Antonio Lima (mr02p), José Luis Morúa (mr32p), Daniel Ordóñez (mr15p), Edy Ortiz Piña (mr35p), Laura Piña (mr12p), Daniel Salazar (mr23p), Norberto Sánchez Nazario (mr07p), Mauricio Toledo (mr30p), and Isaías Villa (mr04p).
+
+\subsection*{Southern PRD---Roll rate in contested votes: 15\%}
+
+Sergio Avila Rojas (mr34p), Hipólito Bravo (mr37p), Juan Bustos (mr06p), Agustín Guerrero (mr13p), Ramón Jiménez López (mr01p), Salvador Martínez della Rocca (mr38p), Avelino Méndez Rangel (mr39p), Hernández Mirón (mr40p), Humberto Morgan (mr25p), Tomás Pliego (mr10p), Leticia Quezada (mr33p), Cristóbal Ramírez (mr09p), Arturo Santana (mr26p), Miguel Sosa (mr31p), Edgar Torres Baltazar (mr08s), Enrique Vargas Anaya (mr03p), and Balfre Vargas Cortés (mr05p).
+
+
+\bibliographystyle{apsr}
+\bibliography{d:/01/mydocs/magar}
+
+\end{document}

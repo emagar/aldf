@@ -1,0 +1,283 @@
+\documentclass[letter,12pt]{article}
+\usepackage[letterpaper,right=1in,left=1in,top=1in,bottom=1in]{geometry}
+%\usepackage[letterpaper,right=1.75in,left=1.75in,top=1.25in,bottom=1.25in]{geometry}
+\usepackage[longnamesfirst, sort]{natbib}\bibpunct[]{(}{)}{;}{a}{}{,}
+\usepackage{ae} % or {zefonts}
+\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage{lscape} %landcape pages support
+\usepackage{setspace} %allows to change linespacing
+\setstretch{2} %linespacing
+%\onehalfspacing
+%\doublespacing
+\usepackage{pifont} %para tener la ballot cross \ding{55}
+
+% avoid clubs and widows
+\clubpenalty=9000 \widowpenalty=9000
+% \displaywidowpenalty=9999
+
+\usepackage[pdftex]{graphicx}
+%\usepackage{graphicx}
+\graphicspath{"c:/data"}
+\usepackage{color}
+%\usepackage[colorlinks]{hyperref}
+\usepackage{tikz} % Easier syntax to draw pgf files (invokes pgf automatically)
+\usetikzlibrary{arrows,shapes.geometric}
+%\usepackage{pgfmath}
+
+\usepackage{multirow} %allows multiple rows in tables
+\usepackage{rotating}% allows sideways tables or other stuff
+
+%%%for submission: sends figs and tables to last pages, other turns footnotes to endnotes
+%%%if endnotes used, place \listofendnotes where you want the endnotes to appear (it must be after the last endnote).
+%%%el archivo "endfloat.cfg" (disponible en C:...\miktex\tex\latex\endfloat) debe guardarse en el directorio de trabajo para jalar sidewaystable al final con demás tablas
+%%\RequirePackage[nomarkers,nolists]{endfloat}
+%%\RequirePackage{endnotes}
+%%\let\footnote=\endnote
+%%\newcommand{\listofendnotes}{
+%%   \begingroup
+%%   \parindent 0pt
+%%   \parskip 2ex
+%%   \def\enotesize{\normalsize}
+%%   \theendnotes
+%%   \endgroup
+%%}
+
+% titlepage without author and date
+%\renewcommand{\maketitle}{
+%   \begin{spacing}{1.5}
+%   \centering
+%   \LARGE{\textbf{\@title}}
+%   \end{spacing}
+%}
+
+% to change margins in a section -- type \begin{changemargin}{deltaLEFT}{deltaRIGHT}
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist
+
+%permiten añadir espacio arriba o abajo del texto de un renglón en una tabla
+\newcommand\T{\rule{0pt}{2.6ex}}         % Top strut at least 2.6ex
+\newcommand\B{\rule[­1.2ex]{0pt}{0pt}}   % Bottom strut at least 2.6ex
+%usage
+%\begin{tabular}[t]{|c|c|}
+% \hline
+% \multicolumn{2}{|c|}{Laplace transforms\T\B}  \\\hline
+% $f(t)$ \T        & $(p)$ \B                     \\\hline
+% $\delta(t)$      & $1$ \T                       \\[.5ex]
+% $\cos\omega_0t$  & $\frac{p}{p^2+\omega_0^2\B}$ \\\hline
+%\end{tabular}
+
+%\bibdata{c://mydocs//1new//}
+
+%\usepackage{cancel} % permits to strike terms in equations
+
+%defines argmax function
+\DeclareMathOperator*{\argmax}{argmax}
+
+%adds comma-separator to thousands
+%\usepackage[np]{numprint}
+
+\begin{document}
+
+\setstretch{1} %linespacing
+
+\title{The mischiefs of faction: negative agenda setting in Mexico City's assembly\thanks{Thanks to Laura Enríquez.}
+      }
+\author{Eric Magar\\ITAM\\ {\small \url{emagar@itam.mx}}
+    \and Rafael Ch\\ITAM\\ {\small \url{rafael.ch.d@gmail.com}}
+    \and Mariel Melka\\University of Essex\\ {\small \url{mayel_melka@hotmail.com}}}
+\date{\today}
+\maketitle
+% \thispagestyle{empty}  %% removes page numbers
+% \pagestyle{empty}      %% removes page numbers part 2
+
+%\begin{center}\textbf{Draft} --- not for circulation --- comments very welcome\end{center}
+
+\begin{abstract}
+\noindent We report work in progress. Procedural cartel theory \citep{cox.mccubbins.2005} expects that intra-majority party conflict in final passage votes will be reduced to a minimum. This is a consequence of agenda control by key party members. We inspect roll call voting in the 4th legislature of Mexico City's Assembly and discover that the majority party split with some frequency. Ideal point estimation reveals two lines of Assembly cleavage, one the classic left--right divide on economic issues, the other mostly related to appointments of officers at different levels. While the left-leaning PRD majority showed cohesion in the first dimension, the presence of two distinct factions is manifest in the second.
+\end{abstract}
+
+%\setstretch{2} %linespacing
+
+% OJO: rollrates.r detecta problema: datos incluyen comisión permanente en ptos ideales
+
+%\noindent Una de las hipótesis de V.O.\ Key \citep{key.1949} es que los sistemas de partido hegemónico presentan un faccionalismo agudo. Contrario a lo que la carencia de competencia partidista sugiere a primera vista, los sistemas de partido ``prácticamente único'' están muy lejos de facilitar la toma de decisiones. Es común que la competencia entre facciones del partido sea férrea y paralice muchas decisiones gubernamentales.
+
+\noindent The theme of agenda manipulation and its consequences has received a fair deal of attention in political science. In general terms, the literature has demonstrated how someone in a position to manipulate the voting agenda will, in most circumstances, gain relative influence in collective choice. This sort of influence has been dubbed agenda power, with remarkably fruitful applications in the studies of legislatures \citep[eg.][]{baron.ferejohn.1989, weingast.marshall.1988, laver.shepsle.1990}.
+
+Agenda power is any special ability to decide what gets voted, when, and how \citep[][:338--40]{schwartz.1987}. \citet{cox.mccubbins.1993,cox.mccubbins.2005} put the notion at the core of their claim that party government in the US House of Representatives has been in operation since the late 19th century but not been duly recognized. Traditional advocates of party government focused their attention in the final steps of the process, suggesting that it is the majority's ability to produce a cohesive voting bloc that is the source of influence. Recognizing that heterogeneity often renders US parties unable to muster unity on important and divisive votes \citep{krehbiel.1993}, Cox and McCubbins argue that influence can occur at earlier stages of the legislative process. For systems such as the US, where achieving party discipline is costly, it is the majority's seizure of the chamber's offices with agenda power that is key to its success.
+
+Their approach distinguishes offices with two types of agenda power, positive and negative \citep[][:222]{cox.mccubbins.2005}. Positive agenda power grants the officeholder proposal rights, the capacity to push bills past the ``gauntlet'' of gate-keepers to a final passage vote on the floor. Negative agenda power gives veto rights, the capacity to prevent bills from reaching the floor for final passage vote. The mix of offices with positive and negative agenda power depends on similarity of purpose within the party (7). The more internal division in preferences, the more members wish to limit the proposal rights of other partners, thus strengthening veto rights across the board. The value of majority is then its power to keep certain issues off the agenda, preserving the associated status quo policies. The more homogeneous the party preferences, the more members will agree to expand each other's proposal rights, thereby weakening veto rights. The value of majority is then the power to push certain issues onto the agenda, changing the associated status quo policies.
+
+One of the most direct expectations of such view of parties in legislatures is that the majority should seldom divide in final passage votes. Not due to a lack of conflict, one possible explanation for voting harmony, but to agenda control. Any divided issue, the theory predicts, is removed from the agenda before it reaches the floor for a final vote. What remains has the approval of all relevant party members, and therefore should receive ample support. Before exploring the voting record in section 3, we proceed to identify offices with positive and negative agenda power in Mexico City's Assembly.
+
+\section{Rules of engagement}
+
+Deputies are elected for one three-year period and cannot stand for immediate reelection. This general setting has been shown to create strong incentives for party discipline in Congress \citep{rosas.langston.2011}. Procedure creates further incentives for party unity. Assembly procedures are, for the most part, set out in the Government Statute, issued by Congress, the Assembly's Organic Law, and two regulations, for Internal Government and for Committees.\footnote{The 1990s reform did not grant the DF state sovereignty, and it therefore has no constitution. Instead, the Estatuto de Gobierno del Distrito Federal, issued by the federal Congress in July 1994 and last amended in April 2008, is the fundamental law, mandating the broad lines of Assembly internal organization and granting the Assembly power to issue procedural rules in harmony with the Statute. The present Ley Orgánica de la ALDF dates from December 2002, last amended October 2009; the Reglamento para el Gobierno Interior de la ALDF from May 2003, last amended October 2010; and the Reglamento Interior de las Comisiones de la ALDF from December 2003, last amended November 2010. One final Regulation for Financial Oversight, not reviewed for this paper, completes the ALDF procedural venues. All are available at \url{http://www.aldf.gob.mx/marco-juridico-102-1.html}.}
+
+Rules make a sharp distinction between deputies who belong in a ``parliamentary group'' from those that do not. The group-less are second-class deputies who cannot chair committees and who are eligible to receive committee assignments, staff, and other valuable legislative resources only after groups have been satisfied.\footnote{Organic law 85-II; Internal government 15.} Parties with less than three deputies cannot form a group, leaving its members ineligible for first class upgrade.\footnote{Organic law 85-I.} Once formed, each group elects a coordinator, whom it can replace at will; same-party deputies, however, must caucus in a single group, and anyone who breaks apart foregoes the possibility of joining another group.\footnote{Organic law 87; Internal government 15.} Groups are therefore the factions in control of (not-too-small) legislative parties. Rules play in their favor: unless you have the votes within your party to replace the incumbent coordinator, splitting is made prohibitively costly. We shall henceforth refer to groups as simply parties. Those with less than two members, and those who have split or been expelled will simply become party-less.
+
+Rules, however, also make majority status priceless, thereby creating incentives for the majority leader to cater to all party factions. Assembly government can only be cartelized when a party enjoys a majority, but becomes collegial in case of plurality.\footnote{Leader and dissenting factions play a game of chicken, both facing heavy penalties if the split materializes.} Assembly government is vested in two distinct bodies, the plural Directing Board (\emph{Mesa Directiva}) and the majority-controlled Government Committee (\emph{Comisión de Gobierno}). The Board is charged with floor proceedings management when the Assembly is in session.\footnote{Organic law 31.} The Board president has power to declare recesses, to extend sessions, or even suspend them; participates in preparing the day's order with the Government Committee; is responsible for sending bills to the proper committee for a report; and decides how to group a bill's articles in so-called particular votes.\footnote{Organic law 36; Internal government 135.} While all this apparently adds up to important agenda power, the Board is severely constrained vis-à-vis the Government Committee, and can only be influential in the legislative process under very proper circumstances. The Board suffers frequent turnovers, its eight members and president have to be replaced monthly by the floor, and possibly sooner if some deputy files a motion that is adopted in plenary vote.\footnote{Organic law 32, 40.} Should it arise, all the Committee needs to remove Board opposition is some patience. To make things worse, when Assembly is not in session --- that's most of the year --- the Committee directly performs the Board's duties.\footnote{Statute 51-III; Organic law 27.}
+
+In practice, Assembly steering takes place in the Government Committee. Party coordinators are members ex officio, their votes weighted relative to floor party sizes. While vote weighting guarantees majority control of the Committee, extra members are added to prevent smaller parties from using the vanishing quorum in Committee business---no Assembly committee can meet with less than half its members.\footnote{Internal government 131.} The method is contingent on the existence of a majority party: if one exists, Committee membership is doubled with majority party deputies; otherwise, extra members will render the Committee proportional to floor parties.\footnote{Organic law 41.} The presidency of the Government Committee belongs to the majority party if there is one, but rotates yearly among the three largest parties otherwise.\footnote{Organic law 42.}
+
+The Committee has power to remove any member (excluding coordinators), proposing a replacement to the floor---an obvious advantage for the majority. Its procedural prerogatives include the exclusive right to propose standing committee sizes, members, and chairs for floor approval.\footnote{Organic law 44-III, 63.} And for seven months each year when the Assembly is not in session, the Committee is authorized to receive new bills and send them to the committee of its choice, with no obligation to inform the floor.\footnote{Internal government 51-III.} Standing committees, unlike the plenary, are in permanent session, so the Government Committee has ample opportunities to bypass opposition in the Board or elsewhere.
+
+ABOVE: SEPARATE NEGATIVE FROM POSITIVE
+
+Procedures offer the Government Committee one important gate-keeping opportunity through the Rules committee (Comisión de Normatividad Legislativa). Rules has the power to interpret rules and regulations regarding parliamentary procedure (OL 66-III). But it also has jurisdiction over any legislation not in the exclusive domain of another committee (OL 64). Since defining `exclusive' involves a good deal of subjectivity, Rules should in principle always be in a position to report any piece of legislation, and therefore the majority ought to make sure it has it in its pocket through careful member selection. The Rules committee can play a fundamental role in breaking another standing committee's gate-keeping power: the Board president has to file a discharge petition, if approved by the floor the new report is the Rules committee prerogative (GR 32, 88). And should a committee run amok and produce a dangerous report, Rules can in principle always intervene afterwards to re-do the offending report (or kill the bill).
+
+Bills begin their life is committee, where they must be reported for floor consideration by a majority of its members (OL 63). The report presents the bill, possibly with committee-introduced amendments. Those opposing the report can either reserve articles for separate floor discussion, or file a minority report (OL 68, CR 57). Standing committees are less powerful than in other legislatures because they are required to produce a report within 30 days, and failure to do lets the Board request extension to the floor; if denied, then Board president is authorized to discharge and send bill to Rules committee for a new report (GR 32).
+
+A bill can bypass the committee stage for immediate floor discussion if the rules are suspended by floor majority (GR 133).
+
+Once the report or discharged bill is scheduled, however, leaders and deputies generally lose control of the process due to the forward voting agenda \citep{heller.weldon.nd} that is standard legislative practice in Mexico. Bill in the first reading are voted by roll call ``in general,'' against the status quo. If the vote fails, the process ends. If successful, however, its articles are voted ``in particular'' (GR 135). This is tantamount to scheduling all legislation with an open rule in the floor: ``deals parties make in order to get bills out of committee and approved at the first reading can be picked apart article by article in the second stage'' (p.\ 4).
+
+The Order, or day's agenda, schedules reports and urgent bills for floor consideration, and is prepared jointly by the Board and the Government Committee (GR 95, 98). While the rules are imprecise about how easy it is to postpone (indefinitely?) bills duly reported by committees in the day's Order, Board and Government Committee should each be able to block undesirable pieces that the other wishes to schedule in a given sequence.
+
+Urgency. Committees are to discuss urgent bills in the next session (RC 24). Bills deemed urgent by a floor vote are dispensed of having them registered day prior to session (GR 93). Committees meet at lest monthly, more often if chair, Government Committee or Board so decide (CR 20).
+
+Final remark on puntos de acuerdo. Proposals entered as ``punto de acuerdo'' are given precedence in committee over pending matter (CR 33) and, once reported, are voted in general only, never in particular (GR 116). Puntos de acuerdo are positions the Assembly adopts by floor vote with no substantive legislative content. It is unclear to us how flexible legislative practice can be made to actually propose a bill as punto de acuerdo in the Assembly. The point is quite important because this represents the only explicit instance of a closed rule in Assembly procedure.
+
+Formal procedure grants the majority party agenda power that is mostly of the
+
+\section{Voting in the 4th legislature}
+
+We inspect roll call voting in the 4th Legislature with tenure between September 2006 and September 2009. The 4th was elected in July 2006 concurrent with the presidential race that former Mayor of Mexico City, Andrés Manuel López Obrador, lost by wafer-thin margin to Felipe Calderón. The new city assembly inherited the polarization between López Obrador's PRD and Calderón's PAN. Their parties won nearly four-fifths of assembly deputies, as Table \ref{T:ptyCont} reports, with PRD controlling the majority by a single deputy. The PRD has governed the city since mayoral elections were instituted in 1997. With the exception of the 2000 election, it has always had majority status in the assembly.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{lrrrrrrrrrr}
+            & \multicolumn{10}{c}{\small{Legislature}} \\
+            & \multicolumn{2}{c}{\footnotesize{1st}} & \multicolumn{2}{c}{\footnotesize{2nd}} & \multicolumn{2}{c}{\footnotesize{3rd}} & \multicolumn{2}{c}{\textbf{\footnotesize{4th}}} & \multicolumn{2}{c}{\footnotesize{5th}}   \\ [-.8ex]
+            & \multicolumn{2}{c}{\footnotesize{1997-2000}} & \multicolumn{2}{c}{\footnotesize{2000-03}} & \multicolumn{2}{c}{\footnotesize{2003-06}} & \multicolumn{2}{c}{\textbf{\footnotesize{2006-09}}} & \multicolumn{2}{c}{\footnotesize{2009-12}}   \\
+Caucus      & $N$ & \emph{\%} & $N$ & \emph{\%}  & $N$ & \emph{\%}  & $N$ & \emph{\%} & $N$ & \emph{\%} \\ \hline
+\small{Revolución Democrática (PRD)}
+            & 38  & \emph{58} & 19  & \emph{29}  & 37  & \emph{56}  & 34  & \emph{52} & 34  & \emph{52} \\
+\small{Acción Nacional (PAN)}
+            & 11  & \emph{17} & 17  & \emph{26}  & 16  & \emph{24}  & 17  & \emph{26} & 15  & \emph{23} \\
+\small{Revolucionario Institucional (PRI)}
+            & 11  & \emph{17} & 16  & \emph{24}  &  7  & \emph{11}  &  4  &  \emph{6} &  8  & \emph{12} \\
+\small{Trabajo (PT)}
+            & --  &       --  & --  &       --   & --  &        --  & --  &       --  &  5  & \emph{8}  \\
+\small{Verde Ecologista (PVEM)}
+            &  4  &  \emph{6} &  8  & \emph{12}  &  5  &  \emph{8}  &  3  &  \emph{5} &  3  & \emph{5}  \\
+\small{Democracia Social (DS)}
+            & --  &       --  &  3  &  \emph{5}  & --  &        --  & --  &       --  & --  &      --   \\	
+\small{Alianza Nacional (PANAL)}
+            & --  &       --  & --  &       --   & --  &        --  &  4  &  \emph{6} & --  &      --   \\
+\small{Independent}
+            &  2  & \emph{3}  &  3  &  \emph{5}  &  1  &  \emph{2}  &  4  &  \emph{6} &  1  & \emph{2}  \\	
+\small{Total}
+            & 66  & \emph{100}& 66  & \emph{100} & 66  & \emph{100} & 66  & \emph{100}& 66  & \emph{100}\\
+\multicolumn{11}{l}{\footnotesize{Sources: prepared with information in Diario de Debates at \url{http://www.aldf.gob.mx} (visited}} \\ [-.8ex]
+\multicolumn{11}{l}{\footnotesize{February 24, 2010).}} \\
+\end{tabular}
+ \caption{\emph{Party contingents in the ALDF since 1997. Independents row includes group-less deputies in each legislature: one each PFCRN and PT in the 1st; one PT and two Convergencia in the 2nd; one México Posible in the 3rd; one PT, one Convergencia, and two Democracia Social in the 4th; and one PANAL in 5th.}}\label{T:ptyCont}
+\end{center}
+\end{table}
+
+Whereas state elections are remarkably non-ideological (CITE --- the legislative process presumably as well), the Mexico City Assembly is an interesting laboratory that routinely debates themes with great ideological content. The city became the first to ban smoking in public places (later generalized to some extent by Congress), liberalized abortion laws in 200x, legalized gay marriage...
+
+The majority party is also famous for its factionalism. Story on leadership elections or another showing acute intra-party tensions.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{lcccccccc}
+                        & Majority  &&   \multicolumn{4}{c}{minority} && \\
+                        &   PRD     &&   PAN     &    PRI    &  PANAL    &   PVEM    && $N$\\ \cline{2-2} \cline{4-7} \cline{9-9}
+                        & \multicolumn{8}{c}{Part A. Rice scores} \\
+All votes               & .94       && .99       & .99       & .99       &  .99      && 521\\
+Contested votes only    & .83       && .98       & .99       & .96       &  .98      && 175\\
+Minority >10\%          & .84       && .98       & 1         & .95       &  .98      && 137\\
+                        & \multicolumn{8}{c}{Part B. Party on winning side} \\
+All votes               & \emph{98} && \emph{86} & \emph{87} & \emph{88} & \emph{73} && 521\\
+Contested votes only    & \emph{93} && \emph{61} & \emph{70} & \emph{65} & \emph{58} && 175\\
+Minority >10\%          & \emph{89} && \emph{44} & \emph{62} & \emph{56} & \emph{50} && 137\\
+                        & \multicolumn{8}{c}{Part C. Roll rates} \\
+All votes               & \emph{2}  && \emph{10} & \emph{10} & \emph{8}  & \emph{24} && 521\\
+Contested votes only    & \emph{6}  && \emph{29} & \emph{21} & \emph{23} & \emph{33} && 175\\
+Minority >10\%          & \emph{9}  && \emph{41} & \emph{26} & \emph{26} & \emph{38} && 137\\
+\end{tabular}
+\caption{\emph{Rice scores, winning sides, and roll rates for parties with at least three deputies. Entries in italics are percentages of votes in 2006--09 period. Right-most column reports total votes in the category. Abstentions treated as missing values.}}\label{T:ricerolls}
+\end{center}
+\end{table}
+
+Our first approach to study cohesion involves Rice scores for parties with three deputies at least. Party $j$'s score for item $i$ is the absolute difference of aye and nay votes as a proportion of votes cast: $Rice_{ij} = | Ayes_{ij} - Nays_{ij} | / (Ayes_{ij} + Nays_{ij})$. The score takes a minimum value of zero, when party $j$'s ayes and nays split evenly in vote $i$, and a maximum of one, when everyone in the party votes likewise. The statistic has problems to deal with abstentions \citep[coded as missing values, but see][]{carey.2002, weldon.2002b} and for smaller parties \citep{desposato.2005}, but remains the most widespread measure of cohesion in legislatures. Table \ref{T:ricerolls}.A reports average Rice scores by party for all bills in the period. The figures confirm that Assembly parties achieve near-perfect cohesion scores systematically --- the modal entry is .99. Since unanimous floor votes (346, or two-thirds of 521), by removing inter-party conflict, also leave no room for intra-party dissent, the table also considers subsets of votes with increasing degrees of conflict. The second row inspects contested votes only, those with at least one deputy against the rest; the third raises the threshold to exclude bills where less than 10 percent of deputies present voted against the rest. Excluding consensual bills from the denominator, however, has virtually no effect in cohesion scores. The one exception to this is notable, for it involves the majority party. The PRD achieved a .94 Rice score when all votes are included, and that was the row minimum. It drops to .83--.84 when unanimous legislation is excluded from the count, a sign that the PRD had more difficulty to maintain floor unity than other parties on the 4th legislature.
+
+The second approach seeks some consequences of party disunity. If the majority party achieved passage of legislation desired by most members despite an internal voting split, then disunity had no substantive consequences. Disunity becomes more problematic from this perspective when the party cannot achieve the goal sought by most of its members. Table \ref{T:ricerolls}.B reports the rate at which parties were on the winning side in the floor --- ie.\ when a party majority voted in favor and the measure passed or voted against and the measure was rejected. A natural gap emerges in the rates of majority and minority parties: the majority party was on the winning side virtually always (98\%), all votes considered, and about nine out of ten times excluding consensual votes. The opposition had a .5 batting score on average when a sizeable minority emerged. Differences are visible between different minority parties. The PAN was by far the party that won least --- in only 44 percent of votes with a sizeable minority, compared to 62, 56, and 50 for smaller parties, an indication that the sizeable minority was mostly made of panistas. That smaller minority parties lost less often would suggest that they were pivotal for passage more often --- 50 percent more often in the case of the PRI. This begs the question of why a party with majority status would ever need to make concessions to small, pivotal parties in the first place. In combination with the often pivotal role of smaller parties, the drop in the generally good batting score of the PRD as conflict arises hints that the majority party often was in need of buying extra votes for passage due to internal splits.
+
+The flip side of winning sides are roll rates, a statistic that is more directly related to negative agenda control. As in \citet{cox.mccubbins.2005}, we will say that party $j$ was rolled in final passage when a majority of party $j$'s members opposed the bill in question, yet it passed. When an internal split threatens to materialize on final passage, the majority has the resources (by virtue of agenda cartelization) to stop the measure before it is too late. From this perspective, the theory expects the majority to seldom be rolled in passage votes. Table \ref{T:ricerolls}.C reports parties' roll rates.
+
+As a contrast, the majority was rolled 1.8 percent on average in the House of the US Congress 1945--98 \citep[][table 5.1]{cox.mccubbins.2005}.
+
+One expectation form procedural cartel theory is that the majority party, by virtue of controlling the agenda, should me mostly united. Minority parties are not so lucky, they should be more prone to division in the floor. See Kim's paper.
+
+Approach 1: Rice scores
+
+Approach 2: Roll rates
+
+To compute Rice scores, roll rates, and eigenvalues, I recoded abstentions as Nays.
+
+
+
+Approach 3: Ideal point estimation
+
+\begin{figure}
+\begin{center}
+   \includegraphics[width=7.5cm]{../graphs/eigenvalues.pdf} \\
+ \caption{\emph{Estimating dimensionality in Mexico City's Assembly. The plot reports the eigenvalues of the double-centered agreement score matrix for the 4th legislature. Eigenvalues drop fairly smoothly from the third value onwards, an indication that the data are most likely two-dimensional \citep[cf.][]{poole.2005}. Abstentions and absences coded as nays for this computation.}}\label{F:Eigen}
+\end{center}
+\end{figure}
+
+
+
+\begin{figure}
+\begin{center}
+   \includegraphics[width=12cm]{../graphs/static.pdf} \\
+ \caption{Ideal points estimation in Mexico City's Assembly 2006--09}\label{F:Static}
+\end{center}
+\end{figure}
+
+
+\begin{figure}
+\begin{center}
+   \includegraphics[width=12cm]{../graphs/staticcutlines.pdf} \\
+ \caption{Item cut-lines 2006--09}\label{F:StaticCutlines}
+\end{center}
+\end{figure}
+
+
+\begin{figure}
+\begin{center}
+\begin{tabular}{cc}
+   \footnotesize{2006Qm3} &
+   \footnotesize{2007Qm1} \\
+   \includegraphics[width=6.5cm]{../graphs/2006-3.pdf} &
+   \includegraphics[width=6.5cm]{../graphs/2007-1.pdf} \\
+   \footnotesize{2007Qm2} &
+   \footnotesize{2007Qm3} \\
+   \includegraphics[width=6.5cm]{../graphs/2007-2.pdf} &
+   \includegraphics[width=6.5cm]{../graphs/2007-3.pdf} \\
+   \footnotesize{2008Qm1} &
+   \footnotesize{2008Qm2} \\
+   \includegraphics[width=6.5cm]{../graphs/2008-1.pdf} &
+   \includegraphics[width=6.5cm]{../graphs/2008-2.pdf} \\
+\end{tabular}
+ \caption{Dynamic ideal points estimation in the first two years (quadrimesters)}\label{F:Dynamic}
+\end{center}
+\end{figure}
+
+
+\section{Discussion}
+
+\section{Conclusion}
+
+
+\bibliographystyle{apsr}
+\bibliography{d:/01/mydocs/magar}
+
+\end{document}

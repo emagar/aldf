@@ -1,0 +1,29 @@
+Mexico City Legislative Assembly (ALDF) Roll Call Votes, 2006--2009
+
+Data was systematized by Eric Magar using information of the Assembly's
+Diario de los Debates (revising and completing data originally compiled 
+by Mariel Melka) at http://www.aldf.gob.mx/diario-debates-204-1.html.  
+
+User is free to download and analyze the data while giving credit to
+Magar, Eric, 2012, ``Who calls the tune? The search for constituent
+effects in the Mexican Congress'', prepared for the Workshop on the
+Architecture of Latin American Democracy, UT-Austin, April 27, 2012.
+Site is under construction, so please refer back to this file for 
+likely changes in the citation instructions.
+
+File rc4.RData is in R format (http://cran.r-project.org/). 
+It covers the 4th Legislature (2006--2009). It includes several objects:
+
+-dipdat: deputy information (nom=name, id=district, part=party, 
+ drop=one indicates deputies who never entered the assembly)
+
+-votdat: vote information (favor=ayes, contra=nays, absten=abstained,
+ dunan=one indicates unanimous vote, leg=legislature, yr-mo-dy=vote's date)
+
+-rc: roll call vote information (0=wasn't chamber member, 1=aye,
+ 2=nay, 3=abstained, 4=present but didn't vote, 5=no show)
+
+-dgaceta: indicates whether or not the vote was also reported by the
+ Gaceta Parlamentaria (http://gaceta.diputados.gob.mx/).
+
+Please contact Eric Magar at emagar@gmail.com with any questions.

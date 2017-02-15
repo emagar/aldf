@@ -1,0 +1,58 @@
+
+model {
+  for (j in 1:J){                ## loop over diputados
+    for (i in 1:I){              ## loop over items
+      #v.hat[j,i] ~ dbern(p[j,i]);                                  ## voting rule
+      #p[j,i] <- phi(v.star[j,i]);                                  ## sets 0<p<1
+      v.star[j,i] ~ dnorm(mu[j,i],1)I(lo.v[j,i],hi.v[j,i]);   ## truncated normal sampling
+      mu[j,i] <- beta[i]*x[j] - alpha[i] + delta[i]*y[j] ## utility differential
+                  }
+                }
+## ESTO LO PUEDO SACAR POST ESTIMACION
+##  for (i in 1:I){
+##  a[i] <- beta[i] / delta[i]  ## pendiente de cutline
+##  b[i] <- alpha[i] / delta[i] ## constante de cutline
+##  }
+  ## priors ################
+for (j in 1:J){
+    x[j] ~  dnorm(0, 1)
+    y[j] ~  dnorm(0, 1)
+    }
+for(i in 1:(V1-1)){
+    alpha[i] ~ dnorm( 0, 1)
+    beta[i]  ~ dnorm( 0, 1)
+    delta[i] ~ dnorm( 0, 1)
+    }
+alpha[V1] ~ dnorm( 0, 1)
+beta[V1]  ~ dnorm(-4, 20)
+delta[V1] ~ dnorm(-4, 20)
+for(i in (V1+1):(H1-1)){
+    alpha[i] ~ dnorm( 0, 1)
+    beta[i]  ~ dnorm( 0, 1)
+    delta[i] ~ dnorm( 0, 1)
+    }
+alpha[H1] ~ dnorm( 0, 1)
+beta[H1]  ~ dnorm( 4, 20)
+delta[H1] ~ dnorm(-4, 20)
+for(i in (H1+1):(V2-1)){
+    alpha[i] ~ dnorm( 0, 1)
+    beta[i]  ~ dnorm( 0, 1)
+    delta[i] ~ dnorm( 0, 1)
+    }
+alpha[V2] ~ dnorm( 0, 1)
+beta[V2]  ~ dnorm( 4, 20)
+delta[V2] ~ dnorm( 4, 20)
+for(i in (V2+1):(H2-1)){
+    alpha[i] ~ dnorm( 0, 1)
+    beta[i]  ~ dnorm( 0, 1)
+    delta[i] ~ dnorm( 0, 1)
+    }
+alpha[H2] ~ dnorm( 0, 1)
+beta[H2]  ~ dnorm( 4, 20)
+delta[H2] ~ dnorm(-4, 20)
+for(i in (H2+1):I){
+    alpha[i] ~ dnorm( 0, 1)
+    beta[i]  ~ dnorm( 0, 1)
+    delta[i] ~ dnorm( 0, 1)
+    }
+}

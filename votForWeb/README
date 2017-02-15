@@ -1,0 +1,26 @@
+Mexico City Legislative Assembly (ALDF) Roll Call Votes, 2006--2009
+
+Data was systematized by Eric Magar using information of the Assembly's
+Diario de los Debates (revising and completing data originally compiled
+by Mariel Melka) at http://www.aldf.gob.mx/diario-debates-204-1.html.
+
+User is free to download and analyze the data while giving credit to
+Magar, Eric, 2012, ``When cartels split: Roll call votes and majority
+factional warfare in the Mexico City Assembly'', presented at the annual
+meeting of the Midwest Political Science Association, April 1, 2011.
+Site is under construction, so please refer back to this file for
+likely changes in the citation instructions.
+
+File rc4.RData is in R format (http://cran.r-project.org/).
+It covers the 4th Legislature (2006--2009). It includes three objects.
+Zip files include text-only versions of those objects.
+
+-dipdat: deputy information (id=district, nom=name, part=party,
+ drop=one indicates deputies who never entered the assembly)
+
+-votdat: vote information (yr-mo-dy=vote's date, favor=ayes, contra=nays, absten=abstained,
+ dunan=one indicates unanimous vote)
+
+-rc: roll call vote information (-1=nay, 0=absent/abstained, 1=aye)
+
+Please contact Eric Magar at emagar@gmail.com with any questions.

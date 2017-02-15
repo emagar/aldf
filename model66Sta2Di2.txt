@@ -1,0 +1,43 @@
+
+model {
+  for (j in 1:J){                ## loop over diputados
+    for (i in 1:I){              ## loop over items
+      #y.hat[j,i] ~ dbern(p[j,i]);                                  ## voting rule
+      #p[j,i] <- phi(v.star[j,i]);                                  ## sets 0<p<1
+      v.star[j,i] ~ dnorm(mu[j,i],1)I(lo.v[j,i],hi.v[j,i]);   ## truncated normal sampling
+      mu[j,i] <- delta[i]*a[i]*x[j] + delta[i]*b[i] - delta[i]*y[j] ## utility differential
+                  }
+                }
+  for (i in 1:I){
+  a[i] <- sin(angle[i]) / sqrt(1-sin(angle[i])*sin(angle[i]))
+  }
+  ## priors ################
+for (j in 1:J){
+    x[j] ~  dnorm(0, 1)
+    y[j] ~  dnorm(0, 1)
+    }
+for(i in 1:(V1-1)){
+    delta[i] ~ dnorm( 0, 0.25)
+#    angle[i] ~ dunif(-1.57,1.57) # (-pi/2,pi/2)
+    angle[i] ~ dunif(.392,1.178) # (pi/8,3pi/8)
+    b[i] ~ dnorm( 0, .25)
+    }
+delta[V1] ~ dnorm( -4, 4)
+angle[V1] ~ dunif(1.37,1.77) # (7pi/16,9pi/16) ---- VERTICAL
+b[V1] ~ dnorm( 0, 4)
+for(i in (V1+1):(H1-1)){
+    delta[i] ~ dnorm( 0, 0.25)
+#    angle[i] ~ dunif(-1.57,1.57) # (-pi/2,pi/2)
+    angle[i] ~ dunif(.392,1.178) # (pi/8,3pi/8)
+    b[i] ~ dnorm( 0, .25)
+    }
+delta[H1] ~ dnorm( -4, 4)
+angle[H1] ~ dunif(-0.2,0.2) # (-pi/16,pi/16) ------ HORIZONTAL
+b[H1] ~ dnorm( 0, 4)
+for(i in (H1+1):I){
+    delta[i] ~ dnorm( 0, 0.25)
+#    angle[i] ~ dunif(-1.57,1.57) # (-pi/2,pi/2)
+    angle[i] ~ dunif(.392,1.178) # (pi/8,3pi/8)
+    b[i] ~ dnorm( 0, .25)
+    }
+}
