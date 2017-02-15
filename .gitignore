@@ -1,2 +1,5 @@
 ## R
 .Rhistory
+## backup files
+*.bak
+*.*.sav
